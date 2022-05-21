@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang = "ko">
+    <head></head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width = divice-width, initial-scale = 1, minimum-scale = 1">
+
+    <body>
+        <script>
+        document.addEventListener("mousemove",function()
+        {
+        window.scroll(0,scrollY)
+        })
+        document.addEventListener("mousewheel",function()
+        {
+        window.scroll(0,scrollY)
+        })
+        </script>
+    
+        <div class = "full_background">
+            <div class = "first_theme_bg">
+                <style>
+                    .full_background
+                    {
+                    background : #02050C;
+                    width : 1920;
+                    margin-left: -8px;
+                    }
+                </style>
+            </div>
+            
+            <div class = "first_theme">
+                <style>
+                    .trailer_bg
+                    {
+                    margin-left: -8px;
+                    margin-top: -32px;
+                    width : 1920;
+                    opacity : 1;
+                    position : absolute;
+                    transition : filter 0.1s;
+                    transition : opacity 0.1s;
+                    }
+
+                
+                    .title
+                    {
+                    position : absolute;
+                    display: block;
+                    font-size : 132px;
+                    font : "Bebas Neue";
+                    color : white;
+                    text-align: left;
+                    padding : 52px;
+                    margin : 32px;
+                    margin-bottom : -96px;
+                    }
+                    
+                    .title_small1
+                    {
+                    position : absolute;
+                    font-size : 48px;
+                    font : "Bebas Neue";
+                    color : #AD8264;
+                    text-align: right;
+                    padding : 64px;
+                    line-height : 0px;
+                    margin : 64px;
+                    margin-left: 520px;
+                    margin-top : -48px;
+                    margin-bottom : 64px;
+                    top : 260px;
+                    }
+                    
+                    .desc_first
+                    {
+                    position : absolute;
+                    font-size : 16px;
+                    font : "Open Sans";
+                    color : #E0C9A8;
+                    text-align: left;
+                    padding : 11px;
+                    margin-top : -100px;
+                    margin-left: 85px;
+                    top : 450px;
+                    }
+                    
+                    .desc
+                    {
+                    position : absolute;
+                    font-size : 16px;
+                    font : "Open Sans";
+                    color : #E0C9A8;
+                    text-align: left;
+                    padding : 11px;
+                    margin-top : -102px;
+                    margin-left: 85px;
+                    top : 475px;
+                    }
+                    
+                    .desc2
+                    {
+                    position : absolute;
+                    font-size : 16px;
+                    font : "Open Sans";
+                    color : #E0C9A8;
+                    text-align: left;
+                    padding : 11px;
+                    margin-top : -78px;
+                    margin-left: 85px;
+                    top : 475px;
+                    }
+                    
+                    .first_theme
+                    {
+                    width : 1920;
+                    background : #ffffff00;
+                    height : 640px;
+                    opacity : 1;
+                    transition : filter 0.5s;
+                    }
+                    
+                    .trailer_bg_box
+                    {
+                    position : absolute;
+                    background : #02050C;
+                    top : 400px;
+                    width : 1920;
+                    height : 320px;
+                    }
+                    
+                    .desc2
+                    {
+                    position : absolute;
+                    font-size : 16px;
+                    font : "Open Sans";
+                    color : #E0C9A8;
+                    text-align: left;
+                    padding : 11px;
+                    margin-top : -78px;
+                    margin-left: 85px;
+                    top : 475px;
+                    }
+                    
+                    .reviews
+                    {
+                    position : absolute;
+                    color : #E0C9A8;
+                    font-size : 17.5px;
+                    font : "Open Sans";
+                    font-weight :bold;
+                    text-align : center;
+                    background : #0C1019;
+                    margin-top : 1200px;
+                    width : 1900px;
+                    height : 325px;
+                    }
+                    
+                    .review1
+                    {
+                    margin-top : 48px
+                    }
+                    
+                    .review2
+                    {
+                    color : white;
+                    }
+                    
+                    .review4
+                    {
+                    color : white;
+                    }
+                    
+                    .reviewer
+                    {
+                    position : absolute;
+                    color : #AD8264;
+                    font-size : 16px;
+                    font : "Open Sans";
+                    font-weight : bold;
+                    text-align : center;
+                    margin-top : 52px;
+                    width : 1900px;
+                    }
+                </style>
+                
+                <div class = "trailer_bg" style="opacity : 1; filter : blur(0px);">
+                    <video autoplay muted loop playsinline control preload = "auto" width = "1910" height = "1050">
+                    <source src = "imgs/Project wak website trailer.mp4" type = "video/mp4">
+                    </video>
+                     
+                    <script src = "https://code.jquery.com/jquery-3.3.1.js">
+                    </script>
+                    
+                    <script type = "text/javascript">
+                        $(window).scroll(function()
+                        {
+                        var scroll = $(window).scrollTop();
+                            $('.trailer_bg').css(
+                            {
+                            filter : "blur(" + (scroll*0.05) + "px)",
+                            opacity : (1 - scroll*0.0015)
+                            })
+                        })
+                    </script>
+                </div>
+                
+                
+                <div class = "trailer_bg_box"></div>
+                
+            
+                <div class = "info_f">
+                <h1 class = "title">Project Wak</h1>
+                <h2 class = "title_small1">프로젝트 왁</h2>
+                <p class = "desc_first">어느날, 어느 한 광기의 팬치 박사가 음모를 꾸미고</p>
+                <p class = "desc">왁굳의 모습을 본딴 "왁드로이드"와 함께 여러 로봇을 제작하여,</p>
+                <p class = "desc2">왁굳 세계관을 위헙하려는 계획, "프로젝트 왁"을 실행 하려 합니다!</p>
+                
+                    <div class = "reviews">
+                    <p class = "review1">"난이도가 꽤나 어렵지만, 재미있었다"</p>
+                    <p class = "review2">"킹아"</p>
+                    <p class = "review3">"여러 스테이지와, 각 보스들을 공략하는 맛이 있다"</p>
+                    <p class = "review4">"재밌어서 더 하고 싶은데 컨텐츠 추가좀"</p>
+                    <p class = "reviewer">- 100명 이상의 베타 테스터 중 일부 평가 -</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class = "select_menu">
+                <style>
+                    li
+                    {
+                    list-style : none;
+                    }
+                
+                    .select_menu
+                    {
+                    width : 1920;
+                    margin-left : -16px;
+                    background : #0C1019;
+                    }
+                    
+                    .title_sec
+                    {
+                    background : #0C1019;
+                    font-size : 64px;
+                    font : "Open Sans";
+                    color : #E0C9A8;
+                    text-align: left;
+                    padding : 64px;
+                    margin : 32px;
+                    margin-top : 1200px;
+                    margin-left: 24px;
+                    }
+                    
+                    .title_sec_small
+                    {
+                    font-size : 32px;
+                    font : "Open Sans";
+                    color : #AD8264;
+                    text-align: left;
+                    padding : 64px;
+                    margin : 32px;
+                    margin-top : -160px;
+                    margin-left: 24px;
+                    margin-bottom : 64px;
+                    height : 64px;
+                    }
+                    
+                    .title_thi
+                    {
+                    font-size : 64px;
+                    font : "Open Sans";
+                    color : #E0C9A8;
+                    text-align: left;
+                    padding : 64px;
+                    margin : 32px;
+                    margin-top : 1800px;
+                    margin-left: 24px;
+                    }
+                    
+                    .title_thi_small
+                    {
+                    font-size : 32px;
+                    font : "Open Sans";
+                    color : #AD8264;
+                    text-align: left;
+                    padding : 64px;
+                    margin : 32px;
+                    margin-top : -160px;
+                    margin-left: 24px;
+                    margin-bottom : 64px;
+                    height : 64px;
+                    }
+                    
+                    .showcase1_button1
+                    {
+                    cursor : pointer;
+                    background-color : #AD8264; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : 24px;
+                    margin-bottom : 0px;
+                    margin-left : 45%;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase1_button2
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 48%;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase1_button3
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 51%;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase1_button4
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 54%;
+                    transition : background 0.2s;
+                    }
+
+                    
+                    .showcase1_image
+                    {
+                    margin-left: 32%;
+                    width : 400vw;
+                    transition : transform 0.4s;
+                    }
+                    
+                    .inner
+                    {
+                    width : 100vw;
+                    float : left;
+                    }
+                
+                </style>
+                
+                <div class = "select_menu_title">
+                    <h1 class = "title_sec">Preview</h1>
+                    <h2 class = "title_sec_small">미리보기</h2>
+                </div>
+                
+                <style>
+                    .showcase_theme_button1
+                    {
+                    cursor : pointer;
+                    background-color : #AD8264; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -128px;
+                    margin-bottom : 0px;
+                    margin-left : 90px;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase_theme_button2
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 120px;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase_theme_button3
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 150px;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase_theme_button4
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 180px;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase_2
+                    {
+                    margin-top : -963px;
+                    transform : translate(-100vw);
+                    }
+                    
+                    .showcase_3
+                    {
+                    margin-top : -963px;
+                    transform : translate(-100vw);
+                    }
+                    
+                    .showcase_4
+                    {
+                    margin-top : -963px;
+                    transform : translate(-100vw);
+                    }
+                </style>
+                
+                <div class = "theme_selector_buttons">
+      
+                    <style>
+                    .under_box_bg
+                    {
+                    margin-bottom: -1350px;
+                    width : 1920;
+                    height : 1350px;
+                    background : #0C1019;
+                    }
+                    </style>
+                    
+                    <div class = "under_box_bg">
+                    
+                    </div>
+                </div>
+                
+                    
+                <div class = "showcase_1">
+                    <div style = "overflow : hidden">
+                        <div class = "showcase1_image">
+                            <div class = "inner">
+                            <img src = "imgs/test1.gif">
+                            </div>
+                            
+                            <div class = "inner">
+                            <img src = "imgs/test2.gif">
+                            </div>
+                            
+                            <div class = "inner">
+                            <img src = "imgs/test3.gif">
+                            </div>
+                            
+                            <div class = "inner">
+                            <img src = "imgs/test4.gif">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class = "selector_buttons">
+                        <li>
+                            <div class = "showcase1_button1"></div>
+                            <div class = "showcase1_button2"></div>
+                            <div class = "showcase1_button3"></div>
+                            <div class = "showcase1_button4"></div>
+                        </li>
+            
+                        
+                        <script>
+                        document.querySelector(".showcase1_button1").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase1_image").style.transform = "translate(0vw)"
+                        document.querySelector(".showcase1_button1").style.background = "#AD8264"
+                        document.querySelector(".showcase1_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase1_button2").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase1_image").style.transform = "translate(-100vw)"
+                        document.querySelector(".showcase1_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button2").style.background = "#AD8264"
+                        document.querySelector(".showcase1_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase1_button3").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase1_image").style.transform = "translate(-200vw)"
+                        document.querySelector(".showcase1_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button3").style.background = "#AD8264"
+                        document.querySelector(".showcase1_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase1_button4").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase1_image").style.transform = "translate(-300vw)"
+                        document.querySelector(".showcase1_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button4").style.background = "#AD8264"
+                        })
+                        </script>
+                    </div>
+                
+                    
+                    
+                    
+                    <style>
+                        .under_box_selector_buttons
+                        {
+                        margin-left : 50%;
+                        height : 360px;
+                        }
+                        
+                        .in_box_text
+                        {
+                        background : #0C1019;
+                        font-size : 16px;
+                        font : "Open Sans";
+                        text-align: center;
+                        color : #AD8264;
+                        margin-top : 32px;
+                        margin-left : -100%;
+                        margin-bottom : 32px;
+                        }
+                        
+                        .first_text_accent
+                        {
+                        font-size : 32px;
+                        font : "Open Sans";
+                        font-weight :bold;
+                        margin-right: -12px;
+                        color : #E0C9A8;
+                        }
+                        
+                        .text_accent
+                        {
+                        color : #E0C9A8;
+                        font-size : 17.5px;
+                        font : "Open Sans";
+                        font-weight :bold;
+                        }
+                    </style>
+                        
+                    <div class = "under_box_selector_buttons">
+                        <div class = "in_box_text">
+                            <!-- theme 1 -->
+                            <span class = "first_text_accent">
+                            어
+                            </span>
+                            
+                            <span>
+                            느날, 어느 한 광기의 <span class = "text_accent">팬치 박사</span>가 음모를 꾸미고<br><br>왁굳의 모습을 본딴 <span class = "text_accent">"왁드로이드"</span>와 함께 여러 로봇을 제작하여,<br><br>왁굳 세계관을 위헙하려는 계획, <span class = "text_accent">"프로젝트 왁"</span>을 실행 하려 합니다!<br><br>왁굳은 그 계획을 저지하기 위해 <span class = "text_accent">박사의 연구소</span>로 떠납니다.<br><br><br><br><br><br>
+                            </span>
+                            
+                            <!-- theme 2 -->
+                            <span>
+                            <span class = "text_accent">장르 태그<br><br></span>RPG, 액션, 소울라이크, 고난이도, 픽셀 그래픽, 싱글 플레이어, 리플레이 가치<br><br><br><br>
+                            </span>
+                            
+                            <!-- theme 3-->
+                            <span>
+                            <span class = "text_accent">개발<br><br></span>1인 개발 (음원만 제외)<br><br><br><br>
+                            </span>
+                           
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <style>
+                    .showcase1_trailer_button
+                    {
+                    cursor : pointer;
+                    background-color : #547282; 
+                    color : white;
+                    margin-left : 39.5%;
+                    font-size: 24px;
+                    transition : background 0.2s;
+                    font-weight : bold;
+                    text-align : center;
+                    border : 2px solid #547282;
+                    padding-left : 24px;
+                    padding-right : 24px;
+                    padding-top : 10px;
+                    padding-bottom : 10px;
+                    text-decoration : none;
+                    position : absolute;
+                    line-height : 28px;
+                    margin-top : 270px;
+                    }
+                    
+                    .showcase1_code_button
+                    {
+                    cursor : pointer;
+                    background-color : #0C1019;
+                    color : white;
+                    margin-left : 50.6%;
+                    font-size: 24px;
+                    transition : background 0.2s;
+                    font-weight : bold;
+                    text-align : center;
+                    border : 2px solid #2E465C;
+                    padding-left : 28px;
+                    padding-right : 28px;
+                    padding-top : 10px;
+                    padding-bottom : 10px;
+                    text-decoration : none;
+                    line-height : 28px;
+                    position : absolute;
+                    margin-top : 270px;
+                    }
+
+                    
+                    </style>
+                    
+                    <li>
+                        <a class = "showcase1_trailer_button" href = "https://youtu.be/YS-_TZILsJU">
+                        Watch Trailer
+                        </a>
+                        
+                        <a class = "showcase1_code_button" href = "https://github.com/ABER1047/Project-wak">
+                        Download
+                        </a>
+                    </li>
+                    
+                    <script>
+                    document.querySelector(".showcase1_trailer_button").addEventListener("mouseover",function()
+                    {
+                    document.querySelector(".showcase1_trailer_button").style.background = "#446A83"
+                    document.querySelector(".showcase1_trailer_button").style.border = "2px solid #446A83"
+                    })
+                    
+                    document.querySelector(".showcase1_trailer_button").addEventListener("mouseleave",function()
+                    {
+                    document.querySelector(".showcase1_trailer_button").style.background = "#547282"
+                    document.querySelector(".showcase1_trailer_button").style.border = "2px solid #547282"
+                    })
+                    
+                    document.querySelector(".showcase1_code_button").addEventListener("mouseover",function()
+                    {
+                    document.querySelector(".showcase1_code_button").style.background = "#2E465C"
+                    })
+                    
+                    document.querySelector(".showcase1_code_button").addEventListener("mouseleave",function()
+                    {
+                    document.querySelector(".showcase1_code_button").style.background = "#0C1019"
+                    })
+                    </script>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            <div class = "theme_selector">
+                <style>
+                .theme_selector_button1
+                {
+                background-color : #547282; 
+                border : 2px solid #547282;
+                margin-left : 77%;
+                text-align : center;
+                cursor : pointer;
+                position : fixed;
+                transition : background 0.2s;
+                width : 60px;
+                height : 36px;
+                top : 32px;
+                color : white;
+                font-weight : bold;
+                font-size : 16px;
+                line-height : 34px;
+                border-radius : 12px;
+                }
+                
+                .theme_selector_button2
+                {
+                background-color : #ffffff00; 
+                border : 2px solid #ffffff00;
+                margin-left : 71%;
+                text-align : center;
+                cursor : pointer;
+                position : fixed;
+                transition : color 0.2s;
+                width : 60px;
+                height : 36px;
+                top : 32px;
+                color : white;
+                font-weight : bold;
+                font-size : 16px;
+                line-height : 34px;
+                border-radius : 12px;
+                }
+                
+                .theme_selector_button3
+                {
+                background-color : #ffffff00; 
+                border : 2px solid #ffffff00;
+                margin-left : 66%;
+                text-align : center;
+                cursor : pointer;
+                position : fixed;
+                transition : color 0.2s;
+                width : 60px;
+                height : 36px;
+                top : 32px;
+                color : white;
+                font-weight : bold;
+                font-size : 16px;
+                line-height : 34px;
+                border-radius : 12px;
+                }
+                
+                .theme_selector_button4
+                {
+                background-color : #ffffff00; 
+                border : 2px solid #ffffff00;
+                margin-left : 58.5%;
+                text-align : center;
+                cursor : pointer;
+                position : fixed;
+                transition : color 0.2s;
+                width : 120px;
+                height : 36px;
+                top : 32px;
+                color : white;
+                font-weight : bold;
+                font-size : 16px;
+                line-height : 34px;
+                border-radius : 12px;
+                text-decoration : none;
+                transition : color 0.2s;
+                color : white;
+                }
+                </style>
+                
+                <div class = theme_selector_button1>
+                Main
+                </div>
+                
+                <div class = theme_selector_button2>
+                Showcase
+                </div>
+                
+                <div class = theme_selector_button3>
+                Contact
+                </div>
+                
+                <a class = "source_code_link" href = "https://aber1047.netlify.app/">
+                    <div class = theme_selector_button4>
+                    Source code
+                    </div>
+                </a>
+                
+                <script>
+                document.querySelector(".theme_selector_button1").addEventListener("mouseover",function()
+                {
+                document.querySelector(".theme_selector_button1").style.background = "#446A83"
+                document.querySelector(".theme_selector_button1").style.border = "2px solid #446A83"
+                })
+                
+                document.querySelector(".theme_selector_button1").addEventListener("mouseleave",function()
+                {
+                document.querySelector(".theme_selector_button1").style.background = "#547282"
+                document.querySelector(".theme_selector_button1").style.border = "2px solid #547282"
+                })
+                
+                document.querySelector(".theme_selector_button1").addEventListener("click",function()
+                {
+                window.scroll({top:0, behavior : "smooth"})
+                })
+                
+                
+                
+                
+                document.querySelector(".theme_selector_button2").addEventListener("mouseover",function()
+                {
+                document.querySelector(".theme_selector_button2").style.color = "#E7D2B5"
+                })
+                
+                document.querySelector(".theme_selector_button2").addEventListener("mouseleave",function()
+                {
+                document.querySelector(".theme_selector_button2").style.color = "white"
+                })
+                
+                document.querySelector(".theme_selector_button2").addEventListener("click",function()
+                {
+                //720이 2번째 칸
+                window.scroll({top:1900, behavior : "smooth"})
+                })
+                
+                
+                
+                
+                
+                document.querySelector(".theme_selector_button3").addEventListener("mouseover",function()
+                {
+                document.querySelector(".theme_selector_button3").style.color = "#E7D2B5"
+                })
+                
+                document.querySelector(".theme_selector_button3").addEventListener("mouseleave",function()
+                {
+                document.querySelector(".theme_selector_button3").style.color = "white"
+                })
+                
+                document.querySelector(".theme_selector_button3").addEventListener("click",function()
+                {
+                //720이 2번째 칸
+                window.scroll({top:9999, behavior : "smooth"})
+                })
+                
+                
+                document.querySelector(".theme_selector_button4").addEventListener("mouseover",function()
+                {
+                document.querySelector(".theme_selector_button4").style.color = "#E7D2B5"
+                })
+                
+                document.querySelector(".theme_selector_button4").addEventListener("mouseleave",function()
+                {
+                document.querySelector(".theme_selector_button4").style.color = "white"
+                })
+                </script>
+            </div>
+            
+
+  
+            
+            
+            <div class = "contact_page">
+                <style>
+                .contact_page_box
+                {
+                background : #02050C;
+                width : 1920;
+                margin-left: -8px;
+                height: 100px;
+                margin-top: 440px;
+                margin-bottom : -8px;
+                }
+                
+                .github_icon
+                {
+                position : absolute;
+                margin-top: -64px;
+                margin-left : 75%;
+                filter : brightness(0.7);
+                transition : filter 0.2s;
+                }
+                
+                .discord_icon
+                {
+                position : absolute;
+                margin-top: -65px;
+                margin-left : 71.8%;
+                filter : brightness(0.7);
+                transition : filter 0.2s;
+                }
+                
+                .youtube_icon
+                {
+                position : absolute;
+                margin-top: -58px;
+                margin-left : 68.6%;
+                filter : brightness(0.7);
+                transition : filter 0.2s;
+                }
+                </style>
+                
+                
+                
+                <div class = "contact_page_box">
+                </div>
+                
+
+                <a href = "https://github.com/ABER1047">
+                    <img class = "github_icon" src = "imgs/github_icon_white.png" href = "https://github.com/ABER1047" width = 32px height = 32px>
+                </a>
+
+                
+
+                <a href = "https://discord.gg/hzbCTRemqq">
+                    <img class = "discord_icon" src = "imgs/discord_icon_white.png" width = 36px height = 36px>
+                </a>
+
+
+                <a class = "youtube_icon" href = "https://www.youtube.com/channel/UCuBkudnNQFlTt6QQ-9Nhdtw/featured">
+                    <img src = "imgs/youtube_icon_white.png" width = 36px height = 25px>
+                </a>
+                
+                
+                <script>
+                document.querySelector(".github_icon").addEventListener("mouseover",function()
+                {
+                document.querySelector(".github_icon").style.filter = "brightness(1)"
+                })
+                
+                document.querySelector(".github_icon").addEventListener("mouseleave",function()
+                {
+                document.querySelector(".github_icon").style.filter = "brightness(0.7)"
+                })
+                
+                
+                
+                document.querySelector(".discord_icon").addEventListener("mouseover",function()
+                {
+                document.querySelector(".discord_icon").style.filter = "brightness(1)"
+                })
+                
+                document.querySelector(".discord_icon").addEventListener("mouseleave",function()
+                {
+                document.querySelector(".discord_icon").style.filter = "brightness(0.7)"
+                })
+                
+                
+                
+                document.querySelector(".youtube_icon").addEventListener("mouseover",function()
+                {
+                document.querySelector(".youtube_icon").style.filter = "brightness(1)"
+                })
+                
+                document.querySelector(".youtube_icon").addEventListener("mouseleave",function()
+                {
+                document.querySelector(".youtube_icon").style.filter = "brightness(0.7)"
+                })
+                </script>
+            </div>
+         </div>
+    </body>
+</html>
+            
