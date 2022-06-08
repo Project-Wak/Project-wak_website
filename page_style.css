@@ -1,0 +1,291 @@
+
+.full_background 
+{
+background: #02050C;
+width: 1920;
+margin-left: -8px;
+}
+
+.trailer_bg
+{
+margin-left: -8px;
+margin-top: -32px;
+width : 1920;
+opacity : 1;
+position : absolute;
+transition : filter 0.1s;
+transition : opacity 0.1s;
+}
+
+
+.title
+{
+position : absolute;
+display: block;
+font-size : 132px;
+font : "Bebas Neue";
+color : white;
+text-align: left;
+padding : 52px;
+margin : 32px;
+margin-bottom : -96px;
+}
+
+.title_small1
+{
+position : absolute;
+font-size : 48px;
+font : "Bebas Neue";
+color : #AD8264;
+text-align: right;
+padding : 64px;
+line-height : 0px;
+margin : 64px;
+margin-left: 520px;
+margin-top : -48px;
+margin-bottom : 64px;
+top : 260px;
+}
+
+.desc_first
+{
+position : absolute;
+font-size : 16px;
+font : "Open Sans";
+color : #E0C9A8;
+text-align: left;
+padding : 11px;
+margin-top : -100px;
+margin-left: 85px;
+top : 450px;
+}
+
+.desc
+{
+position : absolute;
+font-size : 16px;
+font : "Open Sans";
+color : #E0C9A8;
+text-align: left;
+padding : 11px;
+margin-top : -102px;
+margin-left: 85px;
+top : 475px;
+}
+
+.desc2
+{
+position : absolute;
+font-size : 16px;
+font : "Open Sans";
+color : #E0C9A8;
+text-align: left;
+padding : 11px;
+margin-top : -78px;
+margin-left: 85px;
+top : 475px;
+}
+
+.first_theme
+{
+width : 1920;
+background : #ffffff00;
+height : 640px;
+opacity : 1;
+transition : filter 0.5s;
+}
+
+.trailer_bg_box
+{
+position : absolute;
+background : #02050C;
+top : 400px;
+width : 1920;
+height : 320px;
+}
+
+.desc2
+{
+position : absolute;
+font-size : 16px;
+font : "Open Sans";
+color : #E0C9A8;
+text-align: left;
+padding : 11px;
+margin-top : -78px;
+margin-left: 85px;
+top : 475px;
+}
+
+.reviews
+{
+position : absolute;
+color : #E0C9A8;
+font-size : 17.5px;
+font : "Open Sans";
+font-weight :bold;
+text-align : center;
+background : #0C1019;
+margin-top : 1200px;
+width : 1900px;
+height : 325px;
+}
+
+.review1
+{
+margin-top : 48px
+}
+
+.review2
+{
+color : white;
+}
+
+.review4
+{
+color : white;
+}
+
+.reviewer
+{
+position : absolute;
+color : #AD8264;
+font-size : 16px;
+font : "Open Sans";
+font-weight : bold;
+text-align : center;
+margin-top : 52px;
+width : 1900px;
+}
+
+li
+{
+list-style : none;
+}
+
+.select_menu
+{
+width : 1920;
+margin-left : -16px;
+background : #0C1019;
+}
+
+.title_sec
+{
+background : #0C1019;
+font-size : 64px;
+font : "Open Sans";
+color : #E0C9A8;
+text-align: left;
+padding : 64px;
+margin : 32px;
+margin-top : 1200px;
+margin-left: 24px;
+}
+
+.title_sec_small
+{
+font-size : 32px;
+font : "Open Sans";
+color : #AD8264;
+text-align: left;
+padding : 64px;
+margin : 32px;
+margin-top : -160px;
+margin-left: 24px;
+margin-bottom : 64px;
+height : 64px;
+}
+
+.title_thi
+{
+font-size : 64px;
+font : "Open Sans";
+color : #E0C9A8;
+text-align: left;
+padding : 64px;
+margin : 32px;
+margin-top : 1800px;
+margin-left: 24px;
+}
+
+.title_thi_small
+{
+font-size : 32px;
+font : "Open Sans";
+color : #AD8264;
+text-align: left;
+padding : 64px;
+margin : 32px;
+margin-top : -160px;
+margin-left: 24px;
+margin-bottom : 64px;
+height : 64px;
+}
+
+.showcase1_button1
+{
+cursor : pointer;
+background-color : #AD8264; 
+width : 12px;
+height : 12px;
+border-radius: 6px;
+margin-top : 24px;
+margin-bottom : 0px;
+margin-left : 45%;
+transition : background 0.2s;
+}
+
+.showcase1_button2
+{
+cursor : pointer;
+background-color : #E0C9A8; 
+width : 12px;
+height : 12px;
+border-radius: 6px;
+margin-top : -12px;
+margin-bottom : 0px;
+margin-left : 48%;
+transition : background 0.2s;
+}
+
+.showcase1_button3
+{
+cursor : pointer;
+background-color : #E0C9A8; 
+width : 12px;
+height : 12px;
+border-radius: 6px;
+margin-top : -12px;
+margin-bottom : 0px;
+margin-left : 51%;
+transition : background 0.2s;
+}
+
+.showcase1_button4
+{
+cursor : pointer;
+background-color : #E0C9A8; 
+width : 12px;
+height : 12px;
+border-radius: 6px;
+margin-top : -12px;
+margin-bottom : 0px;
+margin-left : 54%;
+transition : background 0.2s;
+}
+
+
+.showcase1_image
+{
+margin-left: 32%;
+width : 400vw;
+transition : transform 0.4s;
+}
+
+.inner
+{
+width : 100vw;
+float : left;
+}
+
