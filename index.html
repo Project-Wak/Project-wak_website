@@ -966,6 +966,7 @@
         --text_17_5px : 17.5px;
         --text_12px : 12px;
         --text_m12px : -12px;
+        --size_100vw : 100vw;
         }
         </style>
          
@@ -998,7 +999,7 @@
             var margin_scale = 1920/c_w;
             document.documentElement.style.setProperty("--title_margin","-32px")
             document.documentElement.style.setProperty("--text_title_s_align","left")
-            document.documentElement.style.setProperty("--text_margin_left_s","-48px")
+            document.documentElement.style.setProperty("--text_margin_left_s",-8*margin_scale+"px")
             document.documentElement.style.setProperty("--text_margin_top_s",25*margin_scale+"px")
             document.documentElement.style.setProperty("--desc_margin","8px")
             
@@ -1041,6 +1042,7 @@
         document.documentElement.style.setProperty("--text_17_5px",17.5*size_scale+"px")
         document.documentElement.style.setProperty("--text_12px",12*size_scale+"px")
         document.documentElement.style.setProperty("--text_m12px",-12*size_scale+"px")
+        document.documentElement.style.setProperty("--size_100vw",100*size_scale+"vw")
 
         text_size = (132*size_scale)+"px";
         console.log(text_size)
