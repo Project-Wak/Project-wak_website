@@ -995,10 +995,11 @@
         var text_size;
             if (c_w < 975)
             {
+            var margin_scale = 1920/c_w;
             document.documentElement.style.setProperty("--title_margin","-32px")
             document.documentElement.style.setProperty("--text_title_s_align","left")
             document.documentElement.style.setProperty("--text_margin_left_s","-48px")
-            document.documentElement.style.setProperty("--text_margin_top_s","128px")
+            document.documentElement.style.setProperty("--text_margin_top_s",25*margin_scale+"px")
             document.documentElement.style.setProperty("--desc_margin","8px")
             
             
