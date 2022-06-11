@@ -12,7 +12,7 @@
                     .full_background
                     {
                     background : #02050C;
-                    width : 1920;
+                    width : var(--window_width);
                     margin-left: -8px;
                     }
                 </style>
@@ -40,9 +40,7 @@
                     </script>
                 </div>
                 
-                
-                <div class = "trailer_bg_box"></div>
-                
+
             
                 <div class = "info_f">
                 <h1 id = "title" class = "title">Project Wak</h1>
@@ -68,9 +66,9 @@
             <style>
                 .trailer_bg
                 {
-                margin-left : var(--trailer_bg_margin_left);;
+                margin-left : var(--trailer_bg_margin_left);
                 margin-top : -32px;
-                width : 1920;
+                width : var(--window_width);
                 opacity : 1;
                 position : absolute;
                 transition : filter 0.1s;
@@ -89,6 +87,7 @@
                 padding : 52px;
                 margin : 32px;
                 margin-bottom : -96px;
+                margin-top : var(--text_margin_top_s);
                 }
                 
                 .title_small1
@@ -101,8 +100,8 @@
                 padding : 64px;
                 line-height : 0px;
                 margin : 64px;
-                margin-left: var(--text_margin_left_s);;
-                margin-top : var(--text_margin_top_s);;;
+                margin-left: var(--text_margin_left_s);
+                margin-top : -48px;
                 margin-bottom : 64px;
                 top : 260px;
                 }
@@ -116,7 +115,7 @@
                 text-align: left;
                 padding : 11px;
                 margin-top : -100px;
-                margin-left: 85px;
+                margin-left: var(--desc_margin);
                 top : 450px;
                 }
                 
@@ -129,7 +128,7 @@
                 text-align: left;
                 padding : 11px;
                 margin-top : -102px;
-                margin-left: 85px;
+                margin-left: var(--desc_margin);
                 top : 475px;
                 }
                 
@@ -142,39 +141,19 @@
                 text-align: left;
                 padding : 11px;
                 margin-top : -78px;
-                margin-left: 85px;
+                margin-left: var(--desc_margin);
                 top : 475px;
                 }
                 
                 .first_theme
                 {
-                width : 1920;
+                width : var(--window_width);
+                margin-left : 0px;
+                margin-right : 0px;
                 background : #ffffff00;
                 height : 640px;
                 opacity : 1;
                 transition : filter 0.5s;
-                }
-                
-                .trailer_bg_box
-                {
-                position : absolute;
-                background : #02050C;
-                top : 400px;
-                width : 1920;
-                height : 320px;
-                }
-                
-                .desc2
-                {
-                position : absolute;
-                font-size : 16px;
-                font : "Open Sans";
-                color : #E0C9A8;
-                text-align: left;
-                padding : 11px;
-                margin-top : -78px;
-                margin-left: 85px;
-                top : 475px;
                 }
                 
                 .reviews
@@ -187,8 +166,9 @@
                 text-align : center;
                 background : #0C1019;
                 margin-top : 1200px;
-                width : 1895px;
+                width : var(--window_width);
                 height : 325px;
+                margin-left : 0px;
                 }
                 
                 .review1
@@ -218,7 +198,7 @@
                 font-weight : bold;
                 text-align : center;
                 margin-top : 52px;
-                width : 1895px;
+                width : var(--window_width);
                 }
             </style>
             
@@ -232,14 +212,14 @@
                 
                     .select_menu
                     {
-                    width : 1920;
-                    margin-left : -16px;
+                    width : var(--window_width);
+                    margin-left : 0px;
+                    margin-right : 0px;
                     background : #0C1019;
                     }
                     
                     .title_sec
                     {
-                    background : #0C1019;
                     font-size : 64px;
                     font : "Open Sans";
                     color : #E0C9A8;
@@ -348,6 +328,7 @@
                     text-align : center;
                     display : block;
                     width : 400vw;
+                    margin-left : -8px;
                     transition : transform 0.4s;
                     }
                     
@@ -442,7 +423,9 @@
                     .under_box_bg
                     {
                     margin-bottom: -1350px;
-                    width : 1920;
+                    margin-left : 0px;
+                    margin-right : 0px;
+                    width : var(--window_width);
                     height : 1350px;
                     background : #0C1019;
                     }
@@ -858,8 +841,9 @@
                 .contact_page_box
                 {
                 background : #02050C;
-                width : 1920;
-                margin-left: -8px;
+                width : var(--window_width);
+                margin-left : 0px;
+                margin-right : 0px;
                 height: 100px;
                 margin-top: 440px;
                 margin-bottom : -8px;
@@ -869,7 +853,7 @@
                 {
                 position : absolute;
                 margin-top: -64px;
-                margin-left : 75%;
+                margin-left : var(--contact_button1_pos);
                 filter : brightness(0.7);
                 transition : filter 0.2s;
                 }
@@ -878,7 +862,7 @@
                 {
                 position : absolute;
                 margin-top: -65px;
-                margin-left : 71.8%;
+                margin-left : var(--contact_button2_pos);
                 filter : brightness(0.7);
                 transition : filter 0.2s;
                 }
@@ -887,7 +871,7 @@
                 {
                 position : absolute;
                 margin-top: -58px;
-                margin-left : 68.6%;
+                margin-left : var(--contact_button3_pos);
                 filter : brightness(0.7);
                 transition : filter 0.2s;
                 }
@@ -962,12 +946,18 @@
         --text_size : 1;
         --text_title_s_align : "right";
         --text_margin_left_s : 520px;
-        --text_margin_top_s : -48px;
+        --text_margin_top_s : 0px;
         --trailer_bg_margin_left : -8px;
         --theme_selector1_pos : 77%;
         --theme_selector2_pos : 71%;
         --theme_selector3_pos : 66%;
         --theme_selector4_pos : 58.5%;
+        --mid_pos : 0px;
+        --contact_button1_pos : 75%;
+        --contact_button2_pos : 71.8%;
+        --contact_button3_pos : 68.6%;
+        --window_width : 100%;
+        --desc_margin : 85px;
         }
         </style>
          
@@ -997,44 +987,55 @@
         var text_size;
             if (c_w < 975)
             {
-            size_scale = 0.7;
+            size_scale = 0.6;
             document.documentElement.style.setProperty("--text_title_s_align","left")
             document.documentElement.style.setProperty("--text_margin_left_s","20px")
-            document.documentElement.style.setProperty("--text_margin_top_s","-64px")
+            document.documentElement.style.setProperty("--text_margin_top_s","72px")
+            document.documentElement.style.setProperty("--desc_margin","75px")
             
             
             document.documentElement.style.setProperty("--theme_selector4_pos","20.5%")
-            
             document.documentElement.style.setProperty("--theme_selector3_pos","40%")
-            
             document.documentElement.style.setProperty("--theme_selector2_pos","52.5%")
-            
             document.documentElement.style.setProperty("--theme_selector1_pos","67%")
+            
+            
+            document.documentElement.style.setProperty("--contact_button1_pos","37.5%")
+            document.documentElement.style.setProperty("--contact_button2_pos","47.5%")
+            document.documentElement.style.setProperty("--contact_button3_pos","57.5%")
             }
             else
             {
             document.documentElement.style.setProperty("--text_title_s_align","right")
             document.documentElement.style.setProperty("--text_margin_left_s","520px")
-            document.documentElement.style.setProperty("--text_margin_top_s","-48px")
+            document.documentElement.style.setProperty("--text_margin_top_s","0px")
+            document.documentElement.style.setProperty("--desc_margin","85px")
+            
             
             document.documentElement.style.setProperty("--theme_selector1_pos","77%")
-            
             document.documentElement.style.setProperty("--theme_selector2_pos","71%")
-            
             document.documentElement.style.setProperty("--theme_selector3_pos","66%")
-            
             document.documentElement.style.setProperty("--theme_selector4_pos","58.5%")
+            
+            
+            document.documentElement.style.setProperty("--contact_button1_pos","75%")
+            document.documentElement.style.setProperty("--contact_button2_pos","71.8%")
+            document.documentElement.style.setProperty("--contact_button3_pos","68.6%")
             }
 
         text_size = (132*size_scale)+"px";
         console.log(text_size)
 
-        document.getElementById(title)
         document.documentElement.style.setProperty("--text_size",text_size)
-
-        var cal_trailer_bg_xpos = (-8-(1920-c_w)*0.5)+"px"
+        var mid_pos_cal = -(1920-c_w)*0.5
+        var cal_trailer_bg_xpos = (-8+mid_pos_cal)+"px"
+        var total_mid_value = mid_pos_cal+"px"
         document.documentElement.style.setProperty("--trailer_bg_margin_left",cal_trailer_bg_xpos)
-        console.log(cal_trailer_bg_xpos)
+        document.documentElement.style.setProperty("--mid_pos",total_mid_value)
+        
+
+        document.documentElement.style.setProperty("--window_width",(c_w-17)+"px")
+        console.log(total_mid_value)
 
         reset_scroll_xpos()
         }
