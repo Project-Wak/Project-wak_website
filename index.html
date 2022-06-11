@@ -2,20 +2,10 @@
 <html lang = "ko">
     <head></head>
     <meta charset = "utf-8">
-    <meta name = "viewport" content = "width = divice-width, initial-scale = 1, minimum-scale = 1">
+    <meta name = "viewport" content = "initial-scale = 1, minimum-scale = 1">
+    
 
     <body>
-        <script>
-        document.addEventListener("mousemove",function()
-        {
-        window.scroll(0,scrollY)
-        })
-        document.addEventListener("mousewheel",function()
-        {
-        window.scroll(0,scrollY)
-        })
-        </script>
-    
         <div class = "full_background">
             <div class = "first_theme_bg">
                 <style>
@@ -29,160 +19,6 @@
             </div>
             
             <div class = "first_theme">
-                <style>
-                    .trailer_bg
-                    {
-                    margin-left: -8px;
-                    margin-top: -32px;
-                    width : 1920;
-                    opacity : 1;
-                    position : absolute;
-                    transition : filter 0.1s;
-                    transition : opacity 0.1s;
-                    }
-
-                
-                    .title
-                    {
-                    position : absolute;
-                    display: block;
-                    font-size : 132px;
-                    font : "Bebas Neue";
-                    color : white;
-                    text-align: left;
-                    padding : 52px;
-                    margin : 32px;
-                    margin-bottom : -96px;
-                    }
-                    
-                    .title_small1
-                    {
-                    position : absolute;
-                    font-size : 48px;
-                    font : "Bebas Neue";
-                    color : #AD8264;
-                    text-align: right;
-                    padding : 64px;
-                    line-height : 0px;
-                    margin : 64px;
-                    margin-left: 520px;
-                    margin-top : -48px;
-                    margin-bottom : 64px;
-                    top : 260px;
-                    }
-                    
-                    .desc_first
-                    {
-                    position : absolute;
-                    font-size : 16px;
-                    font : "Open Sans";
-                    color : #E0C9A8;
-                    text-align: left;
-                    padding : 11px;
-                    margin-top : -100px;
-                    margin-left: 85px;
-                    top : 450px;
-                    }
-                    
-                    .desc
-                    {
-                    position : absolute;
-                    font-size : 16px;
-                    font : "Open Sans";
-                    color : #E0C9A8;
-                    text-align: left;
-                    padding : 11px;
-                    margin-top : -102px;
-                    margin-left: 85px;
-                    top : 475px;
-                    }
-                    
-                    .desc2
-                    {
-                    position : absolute;
-                    font-size : 16px;
-                    font : "Open Sans";
-                    color : #E0C9A8;
-                    text-align: left;
-                    padding : 11px;
-                    margin-top : -78px;
-                    margin-left: 85px;
-                    top : 475px;
-                    }
-                    
-                    .first_theme
-                    {
-                    width : 1920;
-                    background : #ffffff00;
-                    height : 640px;
-                    opacity : 1;
-                    transition : filter 0.5s;
-                    }
-                    
-                    .trailer_bg_box
-                    {
-                    position : absolute;
-                    background : #02050C;
-                    top : 400px;
-                    width : 1920;
-                    height : 320px;
-                    }
-                    
-                    .desc2
-                    {
-                    position : absolute;
-                    font-size : 16px;
-                    font : "Open Sans";
-                    color : #E0C9A8;
-                    text-align: left;
-                    padding : 11px;
-                    margin-top : -78px;
-                    margin-left: 85px;
-                    top : 475px;
-                    }
-                    
-                    .reviews
-                    {
-                    position : absolute;
-                    color : #E0C9A8;
-                    font-size : 17.5px;
-                    font : "Open Sans";
-                    font-weight :bold;
-                    text-align : center;
-                    background : #0C1019;
-                    margin-top : 1200px;
-                    width : 1900px;
-                    height : 325px;
-                    }
-                    
-                    .review1
-                    {
-                    margin-top : 48px
-                    }
-                    
-                    .review2
-                    {
-                    color : white;
-                    }
-                    
-                    .review4
-                    {
-                    color : white;
-                    }
-                    
-                    .reviewer
-                    {
-                    position : absolute;
-                    color : #AD8264;
-                    font-size : 16px;
-                    font : "Open Sans";
-                    font-weight : bold;
-                    text-align : center;
-                    margin-top : 52px;
-                    width : 1900px;
-                    }
-                </style>
-                
                 <div class = "trailer_bg" style="opacity : 1; filter : blur(0px);">
                     <video autoplay muted loop playsinline control preload = "auto" width = "1910" height = "1050">
                     <source src = "imgs/Project wak website trailer.mp4" type = "video/mp4" loading = "eager">
@@ -209,8 +45,8 @@
                 
             
                 <div class = "info_f">
-                <h1 class = "title">Project Wak</h1>
-                <h2 class = "title_small1">프로젝트 왁</h2>
+                <h1 id = "title" class = "title">Project Wak</h1>
+                <h2 id = "title_small1" class = "title_small1">프로젝트 왁</h2>
                 <p class = "desc_first">어느날, 어느 한 광기의 팬치 박사가 음모를 꾸미고</p>
                 <p class = "desc">왁굳의 모습을 본딴 "왁드로이드"와 함께 여러 로봇을 제작하여,</p>
                 <p class = "desc2">왁굳 세계관을 위헙하려는 계획, "프로젝트 왁"을 실행 하려 합니다!</p>
@@ -224,6 +60,167 @@
                     </div>
                 </div>
             </div>
+            
+
+            
+            
+
+            <style>
+                .trailer_bg
+                {
+                margin-left : var(--trailer_bg_margin_left);;
+                margin-top : -32px;
+                width : 1920;
+                opacity : 1;
+                position : absolute;
+                transition : filter 0.1s;
+                transition : opacity 0.1s;
+                }
+
+            
+                .title
+                {
+                position : absolute;
+                display: block;
+                font-size : var(--text_size);
+                font : "Bebas Neue";
+                color : white;
+                text-align: left;
+                padding : 52px;
+                margin : 32px;
+                margin-bottom : -96px;
+                }
+                
+                .title_small1
+                {
+                position : absolute;
+                font-size : 48px;
+                font : "Bebas Neue";
+                color : #AD8264;
+                text-align: var(--text_title_s_align);
+                padding : 64px;
+                line-height : 0px;
+                margin : 64px;
+                margin-left: var(--text_margin_left_s);;
+                margin-top : var(--text_margin_top_s);;;
+                margin-bottom : 64px;
+                top : 260px;
+                }
+                
+                .desc_first
+                {
+                position : absolute;
+                font-size : 16px;
+                font : "Open Sans";
+                color : #E0C9A8;
+                text-align: left;
+                padding : 11px;
+                margin-top : -100px;
+                margin-left: 85px;
+                top : 450px;
+                }
+                
+                .desc
+                {
+                position : absolute;
+                font-size : 16px;
+                font : "Open Sans";
+                color : #E0C9A8;
+                text-align: left;
+                padding : 11px;
+                margin-top : -102px;
+                margin-left: 85px;
+                top : 475px;
+                }
+                
+                .desc2
+                {
+                position : absolute;
+                font-size : 16px;
+                font : "Open Sans";
+                color : #E0C9A8;
+                text-align: left;
+                padding : 11px;
+                margin-top : -78px;
+                margin-left: 85px;
+                top : 475px;
+                }
+                
+                .first_theme
+                {
+                width : 1920;
+                background : #ffffff00;
+                height : 640px;
+                opacity : 1;
+                transition : filter 0.5s;
+                }
+                
+                .trailer_bg_box
+                {
+                position : absolute;
+                background : #02050C;
+                top : 400px;
+                width : 1920;
+                height : 320px;
+                }
+                
+                .desc2
+                {
+                position : absolute;
+                font-size : 16px;
+                font : "Open Sans";
+                color : #E0C9A8;
+                text-align: left;
+                padding : 11px;
+                margin-top : -78px;
+                margin-left: 85px;
+                top : 475px;
+                }
+                
+                .reviews
+                {
+                position : absolute;
+                color : #E0C9A8;
+                font-size : 17.5px;
+                font : "Open Sans";
+                font-weight : bold;
+                text-align : center;
+                background : #0C1019;
+                margin-top : 1200px;
+                width : 1895px;
+                height : 325px;
+                }
+                
+                .review1
+                {
+                margin-top : 48px;
+                text-align : center;
+                }
+                
+                .review2
+                {
+                color : white;
+                text-align : center;
+                }
+                
+                .review4
+                {
+                color : white;
+                text-align : center;
+                }
+                
+                .reviewer
+                {
+                position : absolute;
+                color : #AD8264;
+                font-size : 16px;
+                font : "Open Sans";
+                font-weight : bold;
+                text-align : center;
+                margin-top : 52px;
+                width : 1895px;
+                }
+            </style>
             
             
             <div class = "select_menu">
@@ -302,7 +299,7 @@
                     border-radius: 6px;
                     margin-top : 24px;
                     margin-bottom : 0px;
-                    margin-left : 45%;
+                    margin-left : 45.5%;
                     transition : background 0.2s;
                     }
                     
@@ -315,7 +312,7 @@
                     border-radius: 6px;
                     margin-top : -12px;
                     margin-bottom : 0px;
-                    margin-left : 48%;
+                    margin-left : 48.5%;
                     transition : background 0.2s;
                     }
                     
@@ -328,7 +325,7 @@
                     border-radius: 6px;
                     margin-top : -12px;
                     margin-bottom : 0px;
-                    margin-left : 51%;
+                    margin-left : 51.5%;
                     transition : background 0.2s;
                     }
                     
@@ -341,14 +338,15 @@
                     border-radius: 6px;
                     margin-top : -12px;
                     margin-bottom : 0px;
-                    margin-left : 54%;
+                    margin-left : 54.5%;
                     transition : background 0.2s;
                     }
 
                     
                     .showcase1_image
                     {
-                    margin-left: 32%;
+                    text-align : center;
+                    display : block;
                     width : 400vw;
                     transition : transform 0.4s;
                     }
@@ -687,7 +685,7 @@
                 {
                 background-color : #547282; 
                 border : 2px solid #547282;
-                margin-left : 77%;
+                margin-left : var(--theme_selector1_pos);
                 text-align : center;
                 cursor : pointer;
                 position : fixed;
@@ -706,7 +704,7 @@
                 {
                 background-color : #ffffff00; 
                 border : 2px solid #ffffff00;
-                margin-left : 71%;
+                margin-left : var(--theme_selector2_pos);
                 text-align : center;
                 cursor : pointer;
                 position : fixed;
@@ -725,7 +723,7 @@
                 {
                 background-color : #ffffff00; 
                 border : 2px solid #ffffff00;
-                margin-left : 66%;
+                margin-left : var(--theme_selector3_pos);
                 text-align : center;
                 cursor : pointer;
                 position : fixed;
@@ -744,7 +742,7 @@
                 {
                 background-color : #ffffff00; 
                 border : 2px solid #ffffff00;
-                margin-left : 58.5%;
+                margin-left : var(--theme_selector4_pos);
                 text-align : center;
                 cursor : pointer;
                 position : fixed;
@@ -763,20 +761,20 @@
                 }
                 </style>
                 
-                <div class = theme_selector_button1>
+                <div class = "theme_selector_button1">
                 Main
                 </div>
                 
-                <div class = theme_selector_button2>
+                <div class = "theme_selector_button2">
                 Showcase
                 </div>
                 
-                <div class = theme_selector_button3>
+                <div class = "theme_selector_button3">
                 Contact
                 </div>
                 
                 <a class = "source_code_link" href = "https://aber1047.netlify.app/">
-                    <div class = theme_selector_button4>
+                    <div class = "theme_selector_button4">
                     Source code
                     </div>
                 </a>
@@ -953,6 +951,100 @@
                 })
                 </script>
             </div>
-         </div>
+        </div>
+        
+        
+        
+         
+        <style>
+        :root
+        {
+        --text_size : 1;
+        --text_title_s_align : "right";
+        --text_margin_left_s : 520px;
+        --text_margin_top_s : -48px;
+        --trailer_bg_margin_left : -8px;
+        --theme_selector1_pos : 77%;
+        --theme_selector2_pos : 71%;
+        --theme_selector3_pos : 66%;
+        --theme_selector4_pos : 58.5%;
+        }
+        </style>
+         
+        <script type = "text/javascript">
+            
+        document.addEventListener("mousemove",function()
+        {
+        reset_scroll_xpos()
+        })
+        document.addEventListener("mousewheel",function()
+        {
+        reset_scroll_xpos()
+        })
+
+
+        function reset_scroll_xpos()
+        {
+        window.scroll(0,scrollY)
+        }
+
+
+        reset_pos_by_win()
+        function reset_pos_by_win()
+        {
+        var c_w = window.innerWidth;
+        var size_scale = 1;
+        var text_size;
+            if (c_w < 975)
+            {
+            size_scale = 0.7;
+            document.documentElement.style.setProperty("--text_title_s_align","left")
+            document.documentElement.style.setProperty("--text_margin_left_s","20px")
+            document.documentElement.style.setProperty("--text_margin_top_s","-64px")
+            
+            
+            document.documentElement.style.setProperty("--theme_selector4_pos","20.5%")
+            
+            document.documentElement.style.setProperty("--theme_selector3_pos","40%")
+            
+            document.documentElement.style.setProperty("--theme_selector2_pos","52.5%")
+            
+            document.documentElement.style.setProperty("--theme_selector1_pos","67%")
+            }
+            else
+            {
+            document.documentElement.style.setProperty("--text_title_s_align","right")
+            document.documentElement.style.setProperty("--text_margin_left_s","520px")
+            document.documentElement.style.setProperty("--text_margin_top_s","-48px")
+            
+            document.documentElement.style.setProperty("--theme_selector1_pos","77%")
+            
+            document.documentElement.style.setProperty("--theme_selector2_pos","71%")
+            
+            document.documentElement.style.setProperty("--theme_selector3_pos","66%")
+            
+            document.documentElement.style.setProperty("--theme_selector4_pos","58.5%")
+            }
+
+        text_size = (132*size_scale)+"px";
+        console.log(text_size)
+
+        document.getElementById(title)
+        document.documentElement.style.setProperty("--text_size",text_size)
+
+        var cal_trailer_bg_xpos = (-8-(1920-c_w)*0.5)+"px"
+        document.documentElement.style.setProperty("--trailer_bg_margin_left",cal_trailer_bg_xpos)
+        console.log(cal_trailer_bg_xpos)
+
+        reset_scroll_xpos()
+        }
+
+
+        $(window).resize(function()
+        {
+        reset_pos_by_win()
+        })
+        </script>
+        
     </body>
 </html>
