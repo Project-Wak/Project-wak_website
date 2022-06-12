@@ -45,9 +45,7 @@
                 <div class = "info_f">
                 <h1 id = "title" class = "title">Project Wak</h1>
                 <h2 id = "title_small1" class = "title_small1">프로젝트 왁</h2>
-                <p class = "desc_first">어느날, 어느 한 광기의 팬치 박사가 음모를 꾸미고</p>
-                <p class = "desc">왁굳의 모습을 본딴 "왁드로이드"와 함께 여러 로봇을 제작하여,</p>
-                <p class = "desc2">왁굳 세계관을 위헙하려는 계획, "프로젝트 왁"을 실행 하려 합니다!</p>
+                <p class = "desc_first">어느날, 어느 한 광기의 팬치 박사가 음모를 꾸미고<br>왁굳의 모습을 본딴 "왁드로이드"와 함께 여러 로봇을 제작하여,<br>왁굳 세계관을 위헙하려는 계획, "프로젝트 왁"을 실행 하려 합니다!</p>
                 
                     <div class = "reviews">
                     <p class = "review1">"난이도가 꽤나 어렵지만, 재미있었다"</p>
@@ -118,32 +116,6 @@
                 margin-top : -100px;
                 margin-left: var(--desc_margin);
                 top : 450px;
-                }
-                
-                .desc
-                {
-                position : absolute;
-                font-size : var(--text_16px);
-                font : "Open Sans";
-                color : #E0C9A8;
-                text-align: left;
-                padding : 11px;
-                margin-top : -102px;
-                margin-left: var(--desc_margin);
-                top : 475px;
-                }
-                
-                .desc2
-                {
-                position : absolute;
-                font-size : var(--text_16px);
-                font : "Open Sans";
-                color : #E0C9A8;
-                text-align: left;
-                padding : 11px;
-                margin-top : -78px;
-                margin-left: var(--desc_margin);
-                top : 475px;
                 }
                 
                 .first_theme
@@ -221,7 +193,7 @@
                     
                     .title_sec
                     {
-                    font-size : var(--text_size);
+                    font-size : var(--text_64px);
                     font : "Open Sans";
                     color : #E0C9A8;
                     text-align: left;
@@ -247,7 +219,7 @@
                     
                     .title_thi
                     {
-                    font-size : 64px;
+                    font-size : var(--text_64px);
                     font : "Open Sans";
                     color : #E0C9A8;
                     text-align: left;
@@ -337,6 +309,12 @@
                     {
                     width : 100vw;
                     float : left;
+                    }
+                    
+                    .showcase_real_img
+                    {
+                    width : var(--img_width);
+                    height : var(--img_height);
                     }
                 
                 </style>
@@ -442,19 +420,19 @@
                     <div style = "overflow : hidden">
                         <div class = "showcase1_image">
                             <div class = "inner">
-                            <img src = "imgs/test1.gif" loading = "lazy">
+                            <img class = "showcase_real_img" src = "imgs/test1.gif" loading = "lazy">
                             </div>
                             
                             <div class = "inner">
-                            <img src = "imgs/test2.gif" loading = "lazy">
+                            <img class = "showcase_real_img" src = "imgs/test2.gif" loading = "lazy">
                             </div>
                             
                             <div class = "inner">
-                            <img src = "imgs/test3.gif" loading = "lazy">
+                            <img class = "showcase_real_img" src = "imgs/test3.gif" loading = "lazy">
                             </div>
                             
                             <div class = "inner">
-                            <img src = "imgs/test4.gif" loading = "lazy">
+                            <img class = "showcase_real_img" src = "imgs/test4.gif" loading = "lazy">
                             </div>
                         </div>
                     </div>
@@ -583,19 +561,19 @@
                     cursor : pointer;
                     background-color : #547282; 
                     color : white;
-                    margin-left : 39.5%;
-                    font-size: 24px;
+                    margin-left : var(--trailer_button_pos);
+                    font-size : var(--text_24px);
                     transition : background 0.2s;
                     font-weight : bold;
                     text-align : center;
                     border : 2px solid #547282;
-                    padding-left : 24px;
-                    padding-right : 24px;
-                    padding-top : 10px;
-                    padding-bottom : 10px;
+                    padding-left : var(--text_24px);
+                    padding-right : var(--text_24px);
+                    padding-top : var(--text_10px);
+                    padding-bottom : var(--text_10px);
                     text-decoration : none;
                     position : absolute;
-                    line-height : 28px;
+                    line-height : var(--text_28px);;
                     margin-top : 270px;
                     }
                     
@@ -605,17 +583,17 @@
                     background-color : #0C1019;
                     color : white;
                     margin-left : 50.6%;
-                    font-size: 24px;
+                    font-size : var(--text_24px);
                     transition : background 0.2s;
                     font-weight : bold;
                     text-align : center;
                     border : 2px solid #2E465C;
-                    padding-left : 28px;
-                    padding-right : 28px;
-                    padding-top : 10px;
-                    padding-bottom : 10px;
+                    padding-left : var(--text_28px);
+                    padding-right : var(--text_28px);
+                    padding-top : var(--text_10px);
+                    padding-bottom : var(--text_10px);
                     text-decoration : none;
-                    line-height : 28px;
+                    line-height : var(--text_28px);;
                     position : absolute;
                     margin-top : 270px;
                     }
@@ -667,8 +645,8 @@
                 <style>
                 .theme_selector_button1
                 {
-                background-color : #547282; 
-                border : 2px solid #547282;
+                background-color : var(--theme_selector1_bg); 
+                border : 2px solid var(--theme_selector1_bg); ;
                 margin-left : var(--theme_selector1_pos);
                 text-align : center;
                 cursor : pointer;
@@ -682,6 +660,7 @@
                 font-size : var(--text_16px);
                 line-height : 34px;
                 border-radius : 12px;
+                margin-top : var(--theme_selector_margin);
                 }
                 
                 .theme_selector_button2
@@ -701,6 +680,7 @@
                 font-size : var(--text_16px);
                 line-height : 34px;
                 border-radius : 12px;
+                margin-top : var(--theme_selector_margin);
                 }
                 
                 .theme_selector_button3
@@ -720,6 +700,7 @@
                 font-size : var(--text_16px);
                 line-height : 34px;
                 border-radius : 12px;
+                margin-top : var(--theme_selector_margin);
                 }
                 
                 .theme_selector_button4
@@ -742,6 +723,7 @@
                 text-decoration : none;
                 transition : color 0.2s;
                 color : white;
+                margin-top : var(--theme_selector_margin);
                 }
                 </style>
                 
@@ -764,22 +746,43 @@
                 </a>
                 
                 <script>
-                document.querySelector(".theme_selector_button1").addEventListener("mouseover",function()
-                {
-                document.querySelector(".theme_selector_button1").style.background = "#446A83"
-                document.querySelector(".theme_selector_button1").style.border = "2px solid #446A83"
-                })
-                
-                document.querySelector(".theme_selector_button1").addEventListener("mouseleave",function()
-                {
-                document.querySelector(".theme_selector_button1").style.background = "#547282"
-                document.querySelector(".theme_selector_button1").style.border = "2px solid #547282"
-                })
-                
-                document.querySelector(".theme_selector_button1").addEventListener("click",function()
-                {
-                window.scroll({top:0, behavior : "smooth"})
-                })
+                    if (window.innerWidth < 975)
+                    {
+                    document.querySelector(".theme_selector_button1").addEventListener("mouseover",function()
+                    {
+                    document.querySelector(".theme_selector_button1").style.color = "#E7D2B5"
+                    })
+                    
+                    document.querySelector(".theme_selector_button1").addEventListener("mouseleave",function()
+                    {
+                    document.querySelector(".theme_selector_button1").style.color = "white"
+                    })
+                    
+                    document.querySelector(".theme_selector_button1").addEventListener("click",function()
+                    {
+                    //720이 2번째 칸
+                    window.scroll({top:1900, behavior : "smooth"})
+                    })
+                    }
+                    else
+                    {
+                    document.querySelector(".theme_selector_button1").addEventListener("mouseover",function()
+                    {
+                    document.querySelector(".theme_selector_button1").style.background = "#446A83"
+                    document.querySelector(".theme_selector_button1").style.border = "2px solid #446A83"
+                    })
+                    
+                    document.querySelector(".theme_selector_button1").addEventListener("mouseleave",function()
+                    {
+                    document.querySelector(".theme_selector_button1").style.background = "#547282"
+                    document.querySelector(".theme_selector_button1").style.border = "2px solid #547282"
+                    })
+                    
+                    document.querySelector(".theme_selector_button1").addEventListener("click",function()
+                    {
+                    window.scroll({top:0, behavior : "smooth"})
+                    })
+                    }
                 
                 
                 
@@ -960,13 +963,22 @@
         --window_width : 100%;
         --desc_margin : 85px;
         --title_margin : 0px;
+        --text_64px : 64px;
         --text_16px : 16px;
         --text_48px : 48px;
+        --text_24px : 24px;
         --text_32px : 32px;
         --text_17_5px : 17.5px;
+        --text_28px : 28px;
         --text_12px : 12px;
+        --text_10px : 10px;
         --text_m12px : -12px;
         --size_100vw : 100vw;
+        --theme_selector1_bg : #547282; 
+        --theme_selector_margin : 0px;
+        --img_width : 0px;
+        --img_height : 0px;
+        --trailer_button_pos : 39.5%;
         }
         </style>
          
@@ -992,7 +1004,10 @@
         function reset_pos_by_win()
         {
         var c_w = window.innerWidth;
-        var size_scale = c_w/1088;
+        var size_scale = c_w/1280;
+        var size_scale_sec = c_w/896;
+        var size_scale_thi = c_w/640;
+        var mid_pos_real = (1920-c_w)*0.5;
         var text_size;
             if (c_w < 975)
             {
@@ -1003,54 +1018,75 @@
             document.documentElement.style.setProperty("--text_margin_top_s",25*margin_scale+"px")
             document.documentElement.style.setProperty("--desc_margin","8px")
             
-            
-            document.documentElement.style.setProperty("--theme_selector4_pos","20.5%")
-            document.documentElement.style.setProperty("--theme_selector3_pos","40%")
-            document.documentElement.style.setProperty("--theme_selector2_pos","52.5%")
-            document.documentElement.style.setProperty("--theme_selector1_pos","67%")
+            document.documentElement.style.setProperty("--theme_selector1_bg","#ffffff00")
+            document.documentElement.style.setProperty("--theme_selector4_pos",c_w*size_scale-73+"px")
+            document.documentElement.style.setProperty("--theme_selector3_pos",c_w*size_scale+25+"px")
+            document.documentElement.style.setProperty("--theme_selector2_pos",c_w*size_scale+87+"px")
+            document.documentElement.style.setProperty("--theme_selector1_pos",c_w*size_scale+147+"px")
+            document.documentElement.style.setProperty("--theme_selector_margin","0px")
             
             
             document.documentElement.style.setProperty("--contact_button1_pos","37.5%")
             document.documentElement.style.setProperty("--contact_button2_pos","47.5%")
             document.documentElement.style.setProperty("--contact_button3_pos","57.5%")
+            
+            
+            document.documentElement.style.setProperty("--img_width",1280*size_scale+"px")
+            document.documentElement.style.setProperty("--img_height",720*size_scale+"px")
+            
+            
+            document.documentElement.style.setProperty("--trailer_button_pos","17%")
             }
             else
             {
             size_scale = 1;
+            size_scale_sec = 1;
+            size_scale_thi = 1;
             document.documentElement.style.setProperty("--title_margin","32px")
             document.documentElement.style.setProperty("--text_title_s_align","right")
             document.documentElement.style.setProperty("--text_margin_left_s","520px")
             document.documentElement.style.setProperty("--text_margin_top_s","0px")
             document.documentElement.style.setProperty("--desc_margin","85px")
             
-            
+            document.documentElement.style.setProperty("--theme_selector1_bg","#547282")
             document.documentElement.style.setProperty("--theme_selector1_pos","77%")
             document.documentElement.style.setProperty("--theme_selector2_pos","71%")
             document.documentElement.style.setProperty("--theme_selector3_pos","66%")
             document.documentElement.style.setProperty("--theme_selector4_pos","58.5%")
+            document.documentElement.style.setProperty("--theme_selector_margin","0px")
             
             
             document.documentElement.style.setProperty("--contact_button1_pos","75%")
             document.documentElement.style.setProperty("--contact_button2_pos","71.8%")
             document.documentElement.style.setProperty("--contact_button3_pos","68.6%")
+            
+            
+            document.documentElement.style.setProperty("--img_width","1280")
+            document.documentElement.style.setProperty("--img_height","720")
+            
+            
+            document.documentElement.style.setProperty("--trailer_button_pos","39.5%")
             }
             
-            
-        document.documentElement.style.setProperty("--text_48px",48*size_scale+"px")
-        document.documentElement.style.setProperty("--text_32px",32*size_scale+"px")
-        document.documentElement.style.setProperty("--text_16px",16*size_scale+"px")
-        document.documentElement.style.setProperty("--text_17_5px",17.5*size_scale+"px")
-        document.documentElement.style.setProperty("--text_12px",12*size_scale+"px")
-        document.documentElement.style.setProperty("--text_m12px",-12*size_scale+"px")
-        document.documentElement.style.setProperty("--size_100vw",100*size_scale+"vw")
+        
+        document.documentElement.style.setProperty("--text_64px",64*size_scale_thi+"px")
+        document.documentElement.style.setProperty("--text_48px",48*size_scale_sec+"px")
+        document.documentElement.style.setProperty("--text_32px",32*size_scale_sec+"px")
+        document.documentElement.style.setProperty("--text_28px",28*size_scale_thi+"px")
+        document.documentElement.style.setProperty("--text_24px",24*size_scale_thi+"px")
+        document.documentElement.style.setProperty("--text_16px",16*size_scale_sec+"px")
+        document.documentElement.style.setProperty("--text_17_5px",17.5*size_scale_sec+"px")
+        document.documentElement.style.setProperty("--text_12px",12*size_scale_sec+"px")
+        document.documentElement.style.setProperty("--text_10px",12*size_scale_sec+"px")
+        document.documentElement.style.setProperty("--text_m12px",-12*size_scale_sec+"px")
+        document.documentElement.style.setProperty("--size_100vw",100*size_scale_sec+"vw")
 
         text_size = (132*size_scale)+"px";
         console.log(text_size)
 
         document.documentElement.style.setProperty("--text_size",text_size)
-        var mid_pos_cal = -(1920-c_w)*0.5
-        var cal_trailer_bg_xpos = (-8+mid_pos_cal)+"px"
-        var total_mid_value = mid_pos_cal+"px"
+        var cal_trailer_bg_xpos = (-8-mid_pos_real)+"px"
+        var total_mid_value = -mid_pos_real+"px"
         document.documentElement.style.setProperty("--trailer_bg_margin_left",cal_trailer_bg_xpos)
         document.documentElement.style.setProperty("--mid_pos",total_mid_value)
         
