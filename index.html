@@ -6,6 +6,13 @@
     
 
     <body>
+        <style>
+        body
+        {
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+        </style>
+        
         <div class = "full_background">
             <div class = "first_theme_bg">
                 <style>
@@ -20,7 +27,7 @@
             
             <div class = "first_theme">
                 <div class = "trailer_bg" style="opacity : 1; filter : blur(0px);">
-                    <video autoplay muted loop playsinline control preload = "auto" width = "1910" height = "1050">
+                    <video class = "trailer_video" autoplay muted loop playsinline control preload = "auto" width = "1910" height = "1050">
                     <source src = "imgs/Project wak website trailer.mp4" type = "video/mp4" loading = "eager">
                     </video>
                      
@@ -33,8 +40,8 @@
                         var scroll = $(window).scrollTop();
                             $('.trailer_bg').css(
                             {
-                            filter : "blur(" + (scroll*0.05) + "px)",
-                            opacity : (1 - scroll*0.0015)
+                            filter : "blur(" + (scroll*0.05-0.2) + "px)",
+                            opacity : (1.2 - scroll*0.0015)
                             })
                         })
                     </script>
@@ -62,6 +69,12 @@
             
 
             <style>
+                .trailer_video
+                {
+                overflow: hidden;
+                }
+                
+            
                 .trailer_bg
                 {
                 margin-left : var(--trailer_bg_margin_left);
@@ -79,7 +92,6 @@
                 position : absolute;
                 display: block;
                 font-size : var(--text_size);
-                font : "Bebas Neue";
                 color : white;
                 text-align: left;
                 padding : 52px;
@@ -93,7 +105,6 @@
                 {
                 position : absolute;
                 font-size : var(--text_48px);
-                font : "Bebas Neue";
                 color : #AD8264;
                 text-align: var(--text_title_s_align);
                 padding : 64px;
@@ -573,8 +584,8 @@
                     padding-bottom : var(--text_10px);
                     text-decoration : none;
                     position : absolute;
-                    line-height : var(--text_28px);;
-                    margin-top : 270px;
+                    line-height : var(--text_28px);
+                    margin-top : var(--text_270px);
                     }
                     
                     .showcase1_code_button
@@ -595,7 +606,7 @@
                     text-decoration : none;
                     line-height : var(--text_28px);;
                     position : absolute;
-                    margin-top : 270px;
+                    margin-top : var(--text_270px);
                     }
 
                     
@@ -646,7 +657,7 @@
                 .theme_selector_button1
                 {
                 background-color : var(--theme_selector1_bg); 
-                border : 2px solid var(--theme_selector1_bg); ;
+                border : 2px solid var(--theme_selector1_bg);
                 margin-left : var(--theme_selector1_pos);
                 text-align : center;
                 cursor : pointer;
@@ -757,12 +768,6 @@
                     {
                     document.querySelector(".theme_selector_button1").style.color = "white"
                     })
-                    
-                    document.querySelector(".theme_selector_button1").addEventListener("click",function()
-                    {
-                    //720이 2번째 칸
-                    window.scroll({top:1900, behavior : "smooth"})
-                    })
                     }
                     else
                     {
@@ -777,13 +782,12 @@
                     document.querySelector(".theme_selector_button1").style.background = "#547282"
                     document.querySelector(".theme_selector_button1").style.border = "2px solid #547282"
                     })
-                    
-                    document.querySelector(".theme_selector_button1").addEventListener("click",function()
-                    {
-                    window.scroll({top:0, behavior : "smooth"})
-                    })
                     }
                 
+                document.querySelector(".theme_selector_button1").addEventListener("click",function()
+                {
+                window.scroll({top:0, behavior : "smooth"})
+                })
                 
                 
                 
@@ -849,7 +853,7 @@
                 margin-left : 0px;
                 margin-right : 0px;
                 height: 100px;
-                margin-top: 440px;
+                margin-top: var(--contact_box_margin);
                 margin-bottom : -8px;
                 }
                 
@@ -979,6 +983,8 @@
         --img_width : 0px;
         --img_height : 0px;
         --trailer_button_pos : 39.5%;
+        --contact_box_margin : 440px;
+        --text_270px : 270px;
         }
         </style>
          
@@ -1007,6 +1013,7 @@
         var size_scale = c_w/1280;
         var size_scale_sec = c_w/896;
         var size_scale_thi = c_w/640;
+        var size_scale_for = c_w/576;
         var mid_pos_real = (1920-c_w)*0.5;
         var text_size;
             if (c_w < 975)
@@ -1036,12 +1043,16 @@
             
             
             document.documentElement.style.setProperty("--trailer_button_pos","17%")
+            
+            
+            document.documentElement.style.setProperty("--contact_box_margin",mid_pos_real*0.8+"px")
             }
             else
             {
             size_scale = 1;
             size_scale_sec = 1;
             size_scale_thi = 1;
+            size_scale_for = 1;
             document.documentElement.style.setProperty("--title_margin","32px")
             document.documentElement.style.setProperty("--text_title_s_align","right")
             document.documentElement.style.setProperty("--text_margin_left_s","520px")
@@ -1066,20 +1077,24 @@
             
             
             document.documentElement.style.setProperty("--trailer_button_pos","39.5%")
+            
+            
+            document.documentElement.style.setProperty("--contact_box_margin","440px")
             }
             
         
         document.documentElement.style.setProperty("--text_64px",64*size_scale_thi+"px")
         document.documentElement.style.setProperty("--text_48px",48*size_scale_sec+"px")
-        document.documentElement.style.setProperty("--text_32px",32*size_scale_sec+"px")
+        document.documentElement.style.setProperty("--text_32px",32*size_scale_for+"px")
         document.documentElement.style.setProperty("--text_28px",28*size_scale_thi+"px")
         document.documentElement.style.setProperty("--text_24px",24*size_scale_thi+"px")
-        document.documentElement.style.setProperty("--text_16px",16*size_scale_sec+"px")
-        document.documentElement.style.setProperty("--text_17_5px",17.5*size_scale_sec+"px")
-        document.documentElement.style.setProperty("--text_12px",12*size_scale_sec+"px")
-        document.documentElement.style.setProperty("--text_10px",12*size_scale_sec+"px")
-        document.documentElement.style.setProperty("--text_m12px",-12*size_scale_sec+"px")
+        document.documentElement.style.setProperty("--text_16px",16*size_scale_for+"px")
+        document.documentElement.style.setProperty("--text_17_5px",17.5*size_scale_for+"px")
+        document.documentElement.style.setProperty("--text_12px",12*size_scale_for+"px")
+        document.documentElement.style.setProperty("--text_10px",12*size_scale_for+"px")
+        document.documentElement.style.setProperty("--text_m12px",-12*size_scale_for+"px")
         document.documentElement.style.setProperty("--size_100vw",100*size_scale_sec+"vw")
+        document.documentElement.style.setProperty("--text_270px",270*size_scale_for+"px")
 
         text_size = (132*size_scale)+"px";
         console.log(text_size)
@@ -1091,7 +1106,7 @@
         document.documentElement.style.setProperty("--mid_pos",total_mid_value)
         
 
-        document.documentElement.style.setProperty("--window_width",(c_w-17)+"px")
+        document.documentElement.style.setProperty("--window_width",c_w+"px")
         console.log(total_mid_value)
 
         reset_scroll_xpos()
