@@ -852,7 +852,7 @@
                 width : var(--window_width);
                 margin-left : 0px;
                 margin-right : 0px;
-                height: var(--text_64px);
+                height: var(--text_);
                 margin-top: var(--contact_box_margin);
                 margin-bottom : -8px;
                 }
@@ -985,6 +985,7 @@
         --trailer_button_pos : 39.5%;
         --contact_box_margin : 440px;
         --text_270px : 270px;
+        --text_100px : 100px;
         }
         </style>
          
@@ -1095,6 +1096,7 @@
         document.documentElement.style.setProperty("--text_m12px",-12*size_scale_for+"px")
         document.documentElement.style.setProperty("--size_100vw",100*size_scale_sec+"vw")
         document.documentElement.style.setProperty("--text_270px",270*size_scale_for+"px")
+        document.documentElement.style.setProperty("--text_100px",100*size_scale_thi+"px")
 
         text_size = (132*size_scale)+"px";
         console.log(text_size)
