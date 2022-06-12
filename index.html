@@ -421,9 +421,7 @@
                     }
                     </style>
                     
-                    <div class = "under_box_bg">
-                    
-                    </div>
+                    <div class = "under_box_bg"></div>
                 </div>
                 
                     
@@ -556,7 +554,6 @@
                             <span>
                             <span class = "text_accent">개발<br><br></span>1인 개발 (음원만 제외)<br><br><br><br>
                             </span>
-                           
                         </div>
                     </div>
                     
@@ -608,8 +605,16 @@
                     position : absolute;
                     margin-top : var(--text_270px);
                     }
-
                     
+                    .mobile_mode_margin
+                    {
+                    margin-bottom : var(--showcase_title_margin);
+                    }
+                    
+                    .mobile_mode_margin2
+                    {
+                    margin-bottom : var(--showcase_title_margin2);
+                    }
                     </style>
                     
                     <li>
@@ -986,6 +991,8 @@
         --contact_box_margin : 440px;
         --text_270px : 270px;
         --text_100px : 100px;
+        --showcase_title_margin : 0px;
+        --showcase_title_margin2 : 0px;
         }
         </style>
          
@@ -1047,6 +1054,10 @@
             
             
             document.documentElement.style.setProperty("--contact_box_margin",mid_pos_real*0.8+"px")
+            
+            
+            document.documentElement.style.setProperty("--showcase_title_margin",16*margin_scale+"px")
+            document.documentElement.style.setProperty("--showcase_title_margin2",42*margin_scale+"px")
             }
             else
             {
@@ -1081,6 +1092,10 @@
             
             
             document.documentElement.style.setProperty("--contact_box_margin","440px")
+            
+            
+            document.documentElement.style.setProperty("--showcase_title_margin","0px")
+            document.documentElement.style.setProperty("--showcase_title_margin2","0px")
             }
             
         
