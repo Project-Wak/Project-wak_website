@@ -755,20 +755,20 @@
                 }
                 </style>
                 
-                <div class = "theme_selector_button1">
+                <div id = "theme_selector_button1" class = "theme_selector_button1" style = "transition : opacity 0.8s; opacity : 0">
                 Main
                 </div>
                 
-                <div class = "theme_selector_button2">
+                <div id = "theme_selector_button2" class = "theme_selector_button2" style = "transition : opacity 0.8s; opacity : 0">
                 Showcase
                 </div>
                 
-                <div class = "theme_selector_button3">
+                <div id = "theme_selector_button3" class = "theme_selector_button3" style = "transition : opacity 0.8s; opacity : 0">
                 Contact
                 </div>
                 
                 <a class = "source_code_link" href = "https://aber1047.netlify.app/">
-                    <div class = "theme_selector_button4">
+                    <div id = "theme_selector_button4" class = "theme_selector_button4" style = "transition : opacity 0.8s; opacity : 0">
                     Source code
                     </div>
                 </a>
@@ -1243,7 +1243,8 @@
         document.getElementById("loading_bar_grad").style.height = 0;
         title1_anime()
         setTimeout(title2_anime,200)
-        setTimeout(title_desc_anime,1300)
+        setTimeout(title_desc_anime,700)
+        setTimeout(theme_selector_anime,1500)
         }
         
         
@@ -1260,6 +1261,14 @@
         function title_desc_anime()
         {
         document.getElementById("desc_first").style.opacity = 1;
+        }
+        
+         function theme_selector_anime()
+        {
+        document.getElementById("theme_selector_button1").style.opacity = 1;
+        document.getElementById("theme_selector_button2").style.opacity = 1;
+        document.getElementById("theme_selector_button3").style.opacity = 1;
+        document.getElementById("theme_selector_button4").style.opacity = 1;
         }
         
 
