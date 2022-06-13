@@ -1131,9 +1131,9 @@
         console.log(text_size)
 
         document.documentElement.style.setProperty("--text_size",text_size)
-        var cal_trailer_bg_xpos = (-8-mid_pos_real)+"px"
+        var cal_trailer_bg_xpos = (-mid_pos_real)+"px"
         var total_mid_value = -mid_pos_real+"px"
-        document.documentElement.style.setProperty("--trailer_bg_margin_left",0)
+        document.documentElement.style.setProperty("--trailer_bg_margin_left",cal_trailer_bg_xpos)
         document.documentElement.style.setProperty("--mid_pos",total_mid_value)
         
 
