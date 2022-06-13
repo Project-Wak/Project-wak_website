@@ -27,7 +27,7 @@
             </div>
             
             <div class = "first_theme">
-                <div class = "trailer_bg" style="opacity : 1; filter : blur(0px);">
+                <div class = "trailer_bg" style = "opacity : 1; filter : blur(0px);">
                     <video class = "trailer_video" autoplay muted loop playsinline control preload = "auto" width = "1910" height = "1050">
                     <source src = "imgs/Project wak website trailer.mp4" type = "video/mp4" loading = "eager">
                     </video>
@@ -39,11 +39,22 @@
                         $(window).scroll(function()
                         {
                         var scroll = $(window).scrollTop();
-                            $('.trailer_bg').css(
+                            if (scroll > 64)
                             {
-                            filter : "blur(" + (scroll*0.05-0.2) + "px)",
-                            opacity : (1.2 - scroll*0.0015)
-                            })
+                                $('.trailer_bg').css(
+                                {
+                                filter : "blur(" + (scroll*0.05) + "px)",
+                                opacity : (1 - scroll*0.0015)
+                                })
+                            }
+                            else
+                            {
+                                $('.trailer_bg').css(
+                                {
+                                filter : "blur(0px)",
+                                opacity : 1
+                                })
+                            }
                         })
                     </script>
                 </div>
@@ -51,9 +62,9 @@
 
             
                 <div class = "info_f">
-                <h1 id = "title" class = "title">Project Wak</h1>
-                <h2 id = "title_small1" class = "title_small1">프로젝트 왁</h2>
-                <p class = "desc_first">어느날, 어느 한 광기의 팬치 박사가 음모를 꾸미고<br>왁굳의 모습을 본딴 "왁드로이드"와 함께 여러 로봇을 제작하여,<br>왁굳 세계관을 위헙하려는 계획, "프로젝트 왁"을 실행 하려 합니다!</p>
+                <h1 id = "title" class = "title" style = "transition : opacity 0.8s; opacity : 0">Project Wak</h1>
+                <h2 id = "title_small1" class = "title_small1" style = "transition : opacity 0.8s; opacity : 0">프로젝트 왁</h2>
+                <p id = "desc_first" class = "desc_first" style = "transition : opacity 0.8s; opacity : 0">어느날, 어느 한 광기의 팬치 박사가 음모를 꾸미고<br>왁굳의 모습을 본딴 "왁드로이드"와 함께 여러 로봇을 제작하여,<br>왁굳 세계관을 위헙하려는 계획, "프로젝트 왁"을 실행 하려 합니다!</p>
                 
                     <div class = "reviews">
                     <p class = "review1">"난이도가 꽤나 어렵지만, 재미있었다"</p>
@@ -1204,25 +1215,14 @@
 
         function show_page()
         {
-        document.getElementById("body_t").style.overflowY = "scroll"
+        document.getElementById("body_t").style.overflowY = "scroll";
         setTimeout(set_height,1000)
         loaded_page = true;
-        window.scroll({top:0})
-
-            $('.loading_bar_bg').css(
-            {
-            opacity : 0
-            })
-            
-            $('.loading_bar').css(
-            {
-            opacity : 0
-            })
-            
-            $('.loading_bar_grad').css(
-            {
-            opacity : 0
-            })
+        window.scroll({top:0, behavior : "smooth"})
+        
+        document.getElementById("loading_bar_bg").style.opacity = 0;
+        document.getElementById("loading_bar").style.opacity = 0;
+        document.getElementById("loading_bar_grad").style.opacity = 0;
             
         console.log("page_loaded");
         }
@@ -1233,6 +1233,25 @@
         document.getElementById("loading_bar_bg").style.height = 0;
         document.getElementById("loading_bar").style.height = 0;
         document.getElementById("loading_bar_grad").style.height = 0;
+        title1_anime()
+        setTimeout(title2_anime,200)
+        setTimeout(title_desc_anime,1300)
+        }
+        
+        
+        function title1_anime()
+        {
+        document.getElementById("title").style.opacity = 1;
+        }
+        
+        function title2_anime()
+        {
+        document.getElementById("title_small1").style.opacity = 1;
+        }
+        
+        function title_desc_anime()
+        {
+        document.getElementById("desc_first").style.opacity = 1;
         }
         
 
