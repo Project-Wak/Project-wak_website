@@ -5,9 +5,9 @@
     <meta name = "viewport" content = "initial-scale = 1, minimum-scale = 1">
     
 
-    <body>
+    <body id = "body_t" class = "body_t">
         <style>
-        body
+        .body_t
         {
         overflow-x: hidden; /* Hide horizontal scrollbar */
         }
@@ -1135,6 +1135,109 @@
         reset_pos_by_win()
         })
         </script>
+    </body>
+    
+    
+    
+    
+    
+    <!-- Loading bar -->
+    <body>
+        <style>
+        .loading_bar_bg
+        {
+        position : fixed;
+        width : 1920px;
+        height : 1080px;
+        top : 0px;
+        margin-left : -8px;
+        background : #02050C;
+        transition : width 1.5s, opacity 1s;
+        }
         
+        .loading_bar_grad
+        {
+        position : fixed;
+        background-image: linear-gradient(to right,#bdbdbd,#466074,#263b4b,#192731,#547282,#b2d7eb,#547282,#192731);
+        margin-left : -8px;
+        width : 1920px;
+        height : 2px;
+        top : 485px;
+        }
+        
+        .loading_bar
+        {
+        top : 485px;
+        position : fixed;
+        width : 0px;
+        height : 2px;
+        margin-left : -8px;
+        background : #02050C;
+        transition : width 1.5s;
+        }
+        </style>
+
+        <script>
+        var loaded_page = false;
+        
+        function loading_now()
+        {
+        loading_bar.style.width = window.innerWidth+"px";
+        setTimeout(show_page,1500)
+        }
+        
+        window.onload = function()
+        {
+        loading_now()
+        }
+        
+        $(window).resize(function()
+        {
+            if (!loaded_page)
+            {
+            loading_now()
+            }
+        })
+
+        function show_page()
+        {
+        document.getElementById("body_t").style.overflowY = "scroll"
+        setTimeout(set_height,1000)
+        loaded_page = true;
+        window.scroll({top:0})
+
+            $('.loading_bar_bg').css(
+            {
+            opacity : 0
+            })
+            
+            $('.loading_bar').css(
+            {
+            opacity : 0
+            })
+            
+            $('.loading_bar_grad').css(
+            {
+            opacity : 0
+            })
+            
+        console.log("page_loaded");
+        }
+        
+        
+        function set_height()
+        {
+        document.getElementById("loading_bar_bg").style.height = 0;
+        document.getElementById("loading_bar").style.height = 0;
+        document.getElementById("loading_bar_grad").style.height = 0;
+        }
+        
+
+        </script>
+        
+        
+        <div id = "loading_bar_bg" class = "loading_bar_bg"></div>
+        <div id = "loading_bar_grad" class = "loading_bar_grad"></div>
+        <div id = "loading_bar" class = "loading_bar"></div>
     </body>
 </html>
