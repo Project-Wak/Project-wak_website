@@ -90,7 +90,7 @@
                 .trailer_bg
                 {
                 margin-left : var(--trailer_bg_margin_left);
-                margin-top : -32px;
+                margin-top : var(--text_m32px);
                 width : var(--window_width);
                 opacity : 1;
                 position : absolute;
@@ -994,6 +994,7 @@
         --text_12px : 12px;
         --text_10px : 10px;
         --text_m12px : -12px;
+        --text_m32px : -32px;
         --size_100vw : 100vw;
         --theme_selector1_bg : #547282; 
         --theme_selector_margin : 0px;
@@ -1122,6 +1123,7 @@
         document.documentElement.style.setProperty("--text_12px",12*size_scale_for+"px")
         document.documentElement.style.setProperty("--text_10px",12*size_scale_for+"px")
         document.documentElement.style.setProperty("--text_m12px",-12*size_scale_for+"px")
+        document.documentElement.style.setProperty("--text_m32px",-32/(c_w/1980)+"px")
         document.documentElement.style.setProperty("--size_100vw",100*size_scale_sec+"vw")
         document.documentElement.style.setProperty("--text_270px",270*size_scale_for+"px")
         document.documentElement.style.setProperty("--text_100px",100*size_scale_thi+"px")
