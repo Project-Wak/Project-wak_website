@@ -992,6 +992,7 @@
         --contact_box_margin : 440px;
         --text_270px : 270px;
         --text_100px : 100px;
+        --text_485px : 485px;
         --showcase_title_margin : 0px;
         --showcase_title_margin2 : 0px;
         }
@@ -1113,6 +1114,7 @@
         document.documentElement.style.setProperty("--size_100vw",100*size_scale_sec+"vw")
         document.documentElement.style.setProperty("--text_270px",270*size_scale_for+"px")
         document.documentElement.style.setProperty("--text_100px",100*size_scale_thi+"px")
+        document.documentElement.style.setProperty("--text_485px",485*size_scale_for+"px")
 
         text_size = (132*size_scale)+"px";
         console.log(text_size)
@@ -1163,12 +1165,12 @@
         margin-left : -8px;
         width : 1920px;
         height : 2px;
-        top : 485px;
+        top : var(--text_485px);
         }
         
         .loading_bar
         {
-        top : 485px;
+        top : var(--text_485px);
         position : fixed;
         width : 0px;
         height : 2px;
