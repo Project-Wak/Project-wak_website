@@ -1200,6 +1200,14 @@
         setTimeout(show_page,1500)
         }
         
+        var video_ele = document.getElementById("trailer_video")
+        video_ele.onloadeddata = function()
+        {
+        console.log("loaded_video");
+        document.getElementById("loading_bar").style.transition = "width 1s";
+        setTimeout(show_page,1000);
+        }
+        
         window.onload = function()
         {
         loading_now()
