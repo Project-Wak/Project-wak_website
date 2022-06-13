@@ -1223,7 +1223,6 @@
 
         function show_page()
         {
-        document.getElementById("body_t").style.overflowY = "scroll";
         setTimeout(set_height,1000)
         loaded_page = true;
         window.scroll({top:0, behavior : "smooth"})
@@ -1269,6 +1268,7 @@
         document.getElementById("theme_selector_button2").style.opacity = 1;
         document.getElementById("theme_selector_button3").style.opacity = 1;
         document.getElementById("theme_selector_button4").style.opacity = 1;
+        document.getElementById("body_t").style.overflowY = "scroll";
         }
         
 
