@@ -215,6 +215,8 @@
                     margin-left : 0px;
                     margin-right : 0px;
                     background : #0C1019;
+                    height : 1600px;
+                    margin-bottom : -500px;
                     }
                     
                     .title_sec
@@ -618,11 +620,11 @@
                     </style>
                     
                     <li>
-                        <a class = "showcase1_trailer_button" href = "https://youtu.be/YS-_TZILsJU">
+                        <a id = "showcase1_trailer_button" class = "showcase1_trailer_button" href = "https://youtu.be/YS-_TZILsJU" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">
                         Watch Trailer
                         </a>
                         
-                        <a class = "showcase1_code_button" href = "https://github.com/ABER1047/Project-wak">
+                        <a id = "showcase1_code_button" class = "showcase1_code_button" href = "https://github.com/ABER1047/Project-wak" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">
                         Download
                         </a>
                     </li>
@@ -1215,7 +1217,7 @@
         {
         setTimeout(set_height,1000)
         loaded_page = true;
-        window.scroll({top:0, behavior : "smooth"})
+        window.scroll(0,0)
         
         document.getElementById("loading_bar_bg").style.opacity = 0;
         document.getElementById("loading_bar").style.opacity = 0;
@@ -1286,6 +1288,7 @@
             setTimeout(showcase_image_anime,1500)
             setTimeout(selector_buttons_anime,1600)
             setTimeout(showcase_test_anime,2000)
+            setTimeout(showcase_button_anime,3000)
             }
         })
 
@@ -1374,6 +1377,15 @@
         function showcase_test_anime()
         {
         document.getElementById("under_box_selector_buttons").style.opacity = 1;
+        }
+        
+        
+        //쇼케이스1 다운로드 버튼
+        function showcase_button_anime()
+        {
+        document.getElementById("showcase1_trailer_button").style.opacity = 1;
+        
+        document.getElementById("showcase1_code_button").style.opacity = 1;
         }
 
         </script>
