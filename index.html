@@ -62,16 +62,17 @@
 
             
                 <div class = "info_f">
-                <h1 id = "title" class = "title" style = "transition : opacity 0.8s; opacity : 0">Project Wak</h1>
-                <h2 id = "title_small1" class = "title_small1" style = "transition : opacity 0.8s; opacity : 0">프로젝트 왁</h2>
-                <p id = "desc_first" class = "desc_first" style = "transition : opacity 0.8s; opacity : 0">어느날, 어느 한 광기의 팬치 박사가 음모를 꾸미고<br>왁굳의 모습을 본딴 "왁드로이드"와 함께 여러 로봇을 제작하여,<br>왁굳 세계관을 위헙하려는 계획, "프로젝트 왁"을 실행 하려 합니다!</p>
+                <h1 id = "title" class = "title" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">Project Wak</h1>
+                <h2 id = "title_small1" class = "title_small1" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">프로젝트 왁</h2>
+                <p id = "desc_first" class = "desc_first" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">어느날, 어느 한 광기의 팬치 박사가 음모를 꾸미고<br>왁굳의 모습을 본딴 "왁드로이드"와 함께 여러 로봇을 제작하여,<br>왁굳 세계관을 위헙하려는 계획, "프로젝트 왁"을 실행 하려 합니다!</p>
                 
-                    <div class = "reviews">
-                    <p class = "review1">"난이도가 꽤나 어렵지만, 재미있었다"</p>
-                    <p class = "review2">"보스 컨셉과 맞는 맵 구성과 각 스테이지마다의 공략법이 있어서 좋았음"</p>
-                    <p class = "review3">"각 보스들을 공략하는 맛이 있다"</p>
-                    <p class = "review4">"재밌어서 더 하고 싶은데 컨텐츠 추가좀"</p>
-                    <p class = "reviewer">- 100명 이상의 베타 테스터 중 일부 평가 -</p>
+                    <div id = "reviews" class = "reviews" style = "transition : width 0.8s">
+                    <p id = "review1" class = "review1" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">"난이도가 꽤나 어렵지만, 재미있었다"</p>
+                    <p id = "review2" class = "review2" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">"보스 컨셉과 맞는 맵 구성과 각 스테이지마다의 공략법이 있어서 좋았음"</p>
+                    <p id = "review3" class = "review3" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">"각 보스들을 공략하는 맛이 있다"</p>
+                    <p id = "review4" class = "review4" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">"재밌어서 더 하고 싶은데 컨텐츠 추가좀"</p>
+                    <span class = "reviewer_blinder" style = "transition : width 0.8s; opacity : 1; margin-bottom : -32px; background : white; width : 500px; height : 32px;"></span>
+                    <p id = "reviewer" class = "reviewer" style = "transition : opacity 0.5s; opacity : 0">- 100명 이상의 베타 테스터 중 일부 평가 -</p>
                     </div>
                 </div>
             </div>
@@ -111,6 +112,7 @@
                 margin-bottom : -96px;
                 margin-top : var(--text_margin_top_s);
                 margin-left : var(--title_margin);
+                top : 32px;
                 }
                 
                 .title_small1
@@ -125,7 +127,7 @@
                 margin-left: var(--text_margin_left_s);
                 margin-top : -48px;
                 margin-bottom : 64px;
-                top : 260px;
+                top : 292px;
                 }
                 
                 .desc_first
@@ -138,7 +140,7 @@
                 padding : 11px;
                 margin-top : -100px;
                 margin-left: var(--desc_margin);
-                top : 450px;
+                top : 482px;
                 }
                 
                 .first_theme
@@ -162,9 +164,10 @@
                 text-align : center;
                 background : #0C1019;
                 margin-top : 1200px;
-                width : var(--window_width);
+                width : 0px;
                 height : 325px;
                 margin-left : 0px;
+                top : 32px;
                 }
                 
                 .review1
@@ -199,7 +202,7 @@
             </style>
             
             
-            <div class = "select_menu">
+            <div id = "select_menu" class = "select_menu" style = "transition : width 0.8s;">
                 <style>
                     li
                     {
@@ -208,7 +211,7 @@
                 
                     .select_menu
                     {
-                    width : var(--window_width);
+                    width : 0px;
                     margin-left : 0px;
                     margin-right : 0px;
                     background : #0C1019;
@@ -224,6 +227,7 @@
                     margin : 32px;
                     margin-top : 1200px;
                     margin-left: 24px;
+                    top : 32px;
                     }
                     
                     .title_sec_small
@@ -238,6 +242,7 @@
                     margin-left: 24px;
                     margin-bottom : 64px;
                     height : 64px;
+                    top : 32px;
                     }
                     
                     .title_thi
@@ -343,8 +348,8 @@
                 </style>
                 
                 <div class = "select_menu_title">
-                    <h1 class = "title_sec">Preview</h1>
-                    <h2 class = "title_sec_small">미리보기</h2>
+                    <h1 id = "title_sec" class = "title_sec" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">Preview</h1>
+                    <h2 id = "title_sec_small" class = "title_sec_small" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">미리보기</h2>
                 </div>
                 
                 <style>
@@ -419,27 +424,10 @@
                     }
                 </style>
                 
-                <div class = "theme_selector_buttons">
-      
-                    <style>
-                    .under_box_bg
-                    {
-                    margin-bottom: -1350px;
-                    margin-left : 0px;
-                    margin-right : 0px;
-                    width : var(--window_width);
-                    height : 1350px;
-                    background : #0C1019;
-                    }
-                    </style>
-                    
-                    <div class = "under_box_bg"></div>
-                </div>
-                
                     
                 <div class = "showcase_1">
                     <div style = "overflow : hidden">
-                        <div class = "showcase1_image">
+                        <div id = "showcase1_image" class = "showcase1_image" style = "transition : opacity 0.8s; opacity : 0">
                             <div class = "inner">
                             <img class = "showcase_real_img" src = "imgs/test1.gif" loading = "lazy">
                             </div>
@@ -458,7 +446,7 @@
                         </div>
                     </div>
                     
-                    <div class = "selector_buttons">
+                    <div id = "selector_buttons" class = "selector_buttons" style = "transition : opacity 0.8s; opacity : 0">
                         <li>
                             <div class = "showcase1_button1"></div>
                             <div class = "showcase1_button2"></div>
@@ -546,8 +534,8 @@
                         }
                     </style>
                         
-                    <div class = "under_box_selector_buttons">
-                        <div class = "in_box_text">
+                    <div id = "under_box_selector_buttons" class = "under_box_selector_buttons" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">
+                        <div id = "in_box_text" class = "in_box_text" style = "transition : width 0.8s;">
                             <!-- theme 1 -->
                             <span class = "first_text_accent">
                             어
@@ -564,7 +552,7 @@
                             
                             <!-- theme 3-->
                             <span>
-                            <span class = "text_accent">개발<br><br></span>1인 개발 (음원만 제외)<br><br><br><br>
+                            <span class = "text_accent">개발<br><br></span>1인 개발 (음원만 제외)<br><br><br><br><br><br><br><br><br><br><br><br><br>
                             </span>
                         </div>
                     </div>
@@ -877,7 +865,7 @@
                 .github_icon
                 {
                 position : absolute;
-                margin-top: -64px;
+                margin-top : -64px;
                 margin-left : var(--contact_button1_pos);
                 filter : brightness(0.7);
                 transition : filter 0.2s;
@@ -886,7 +874,7 @@
                 .discord_icon
                 {
                 position : absolute;
-                margin-top: -65px;
+                margin-top : -65px;
                 margin-left : var(--contact_button2_pos);
                 filter : brightness(0.7);
                 transition : filter 0.2s;
@@ -895,7 +883,7 @@
                 .youtube_icon
                 {
                 position : absolute;
-                margin-top: -58px;
+                margin-top : -58px;
                 margin-left : var(--contact_button3_pos);
                 filter : brightness(0.7);
                 transition : filter 0.2s;
@@ -1252,19 +1240,22 @@
         function title1_anime()
         {
         document.getElementById("title").style.opacity = 1;
+        document.getElementById("title").style.top = "0px";
         }
         
         function title2_anime()
         {
         document.getElementById("title_small1").style.opacity = 1;
+        document.getElementById("title_small1").style.top = "260px";
         }
         
         function title_desc_anime()
         {
         document.getElementById("desc_first").style.opacity = 1;
+        document.getElementById("desc_first").style.top = "450px";
         }
         
-         function theme_selector_anime()
+        function theme_selector_anime()
         {
         document.getElementById("theme_selector_button1").style.opacity = 1;
         document.getElementById("theme_selector_button2").style.opacity = 1;
@@ -1273,6 +1264,117 @@
         document.getElementById("body_t").style.overflowY = "scroll";
         }
         
+        
+        $(window).scroll(function()
+        {
+        var scroll = $(window).scrollTop();
+            if (scroll > 600)
+            {
+            setTimeout(review_bg_anime,100)
+            setTimeout(review1_anime,900)
+            setTimeout(review2_anime,1000)
+            setTimeout(review3_anime,1100)
+            setTimeout(review4_anime,1200)
+            setTimeout(reviewer_anime,1500)
+            }
+            
+            if (scroll > 1200)
+            {
+            setTimeout(showcase_bg_anime,100)
+            setTimeout(showcase_text1_anime,900)
+            setTimeout(showcase_text2_anime,1000)
+            setTimeout(showcase_image_anime,1500)
+            setTimeout(selector_buttons_anime,1600)
+            setTimeout(showcase_test_anime,2000)
+            }
+        })
+
+        function review_bg_anime()
+        {
+        document.getElementById("reviews").style.width = window.innerWidth+"px";
+        }
+        
+        function review1_anime()
+        {
+        document.getElementById("review1").style.opacity = 1;
+        document.getElementById("review1").style.top = "0px";
+        }
+        
+        function review2_anime()
+        {
+        document.getElementById("review2").style.opacity = 1;
+        document.getElementById("review2").style.top = "0px";
+        }
+        
+        function review3_anime()
+        {
+        document.getElementById("review3").style.opacity = 1;
+        document.getElementById("review3").style.top = "0px";
+        }
+        
+        function review4_anime()
+        {
+        document.getElementById("review4").style.opacity = 1;
+        document.getElementById("review4").style.top = "0px";
+        }
+        
+        function reviewer_anime()
+        {
+        var _ele_reviewer = document.getElementById("reviewer");
+            if (_ele_reviewer.style.opacity != 1)
+            {
+            _ele_reviewer.style.opacity = 1;
+            setTimeout(reviewer_anime2,350)
+            }
+        }
+        
+        function reviewer_anime2()
+        {
+        document.getElementById("reviewer").style.color = "white";
+        setTimeout(reviewer_anime3,50)
+        }
+        
+        function reviewer_anime3()
+        {
+        document.getElementById("reviewer").style.transition = "color 0.5s";
+        document.getElementById("reviewer").style.color = "#AD8264";
+        }
+        
+        
+        
+        
+        function showcase_bg_anime()
+        {
+        document.getElementById("select_menu").style.width = window.innerWidth+"px";
+        document.getElementById("in_box_text").style.width = window.innerWidth+"px";
+        }
+        
+        function showcase_text1_anime()
+        {
+        document.getElementById("title_sec").style.opacity = 1;
+        document.getElementById("title_sec").style.top = "0px";
+        }
+        
+        function showcase_text2_anime()
+        {
+        document.getElementById("title_sec_small").style.opacity = 1;
+        document.getElementById("title_sec_small").style.top = "0px";
+        }
+        
+        function showcase_image_anime()
+        {
+        document.getElementById("showcase1_image").style.opacity = 1;
+        }
+        
+        function selector_buttons_anime()
+        {
+        document.getElementById("selector_buttons").style.opacity = 1;
+        }
+        
+        function showcase_test_anime()
+        {
+        document.getElementById("under_box_selector_buttons").style.opacity = 1;
+        }
 
         </script>
         
