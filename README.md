@@ -1,6 +1,6 @@
 # Project-wak_website
 
-Project my website 코드 파일에 있는 내용 대충 카피해다가 뚝딱 만든거
+Project my website (https://github.com/ABER1047/project_my_website) 코드 파일에 있는 내용 대충 카피해다가 뚝딱 만든거
 
 나중에 프로젝트 왁 게임 파일 공유할때랑 소스코드 파일 공유할때 쓸려고 만든 사이트
 
