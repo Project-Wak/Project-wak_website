@@ -8,8 +8,12 @@ Project my website (https://github.com/ABER1047/project_my_website)
 
 심심할때마다 이것저것 추가해주고 있음
 
-=================================================
+### ▼ 미리보기
 
-- 웹사이트 :
+![preview_0](preview.gif)
+
+#
+
+### ▼ 웹사이트 :
 
 https://project-wak.netlify.app/
