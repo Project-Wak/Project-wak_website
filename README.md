@@ -16,4 +16,7 @@ Project my website (https://github.com/ABER1047/project_my_website)
 
 ### ▼ 웹사이트 :
 
+https://aber1047.github.io/Project-wak_website/
+
+(미러링)
 https://project-wak.netlify.app/
