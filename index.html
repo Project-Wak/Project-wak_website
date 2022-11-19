@@ -10,6 +10,18 @@
 
     <body id = "body_t" class = "body_t">
         <style>
+        @font-face
+        { 
+        font-family : customfont;
+        src: url(etc/BM_hanna_air.ttf);
+        }
+        
+        div
+        {
+        font-family: customfont;
+        }
+
+        
         .body_t
         {
         overflow-x: hidden; /* Hide horizontal scrollbar */
@@ -1028,7 +1040,7 @@
         var size_scale = c_w/1280;
         var size_scale_sec = c_w/896;
         var size_scale_thi = c_w/640;
-        var size_scale_for = c_w/576;
+        var size_scale_for = c_w/522;
         var mid_pos_real = (1920-c_w)*0.5;
         var text_size;
             if (c_w < 975)
@@ -1037,7 +1049,7 @@
             document.documentElement.style.setProperty("--title_margin","-32px")
             document.documentElement.style.setProperty("--text_title_s_align","left")
             document.documentElement.style.setProperty("--text_margin_left_s",-8*margin_scale+"px")
-            document.documentElement.style.setProperty("--text_margin_top_s",25*margin_scale+"px")
+            document.documentElement.style.setProperty("--text_margin_top_s",32*margin_scale+"px")
             document.documentElement.style.setProperty("--desc_margin","8px")
             
             document.documentElement.style.setProperty("--theme_selector1_bg","#ffffff00")
@@ -1071,11 +1083,11 @@
             size_scale = 1;
             size_scale_sec = 1;
             size_scale_thi = 1;
-            size_scale_for = 1;
+            size_scale_for = 1.1;
             document.documentElement.style.setProperty("--title_margin","32px")
             document.documentElement.style.setProperty("--text_title_s_align","right")
             document.documentElement.style.setProperty("--text_margin_left_s","520px")
-            document.documentElement.style.setProperty("--text_margin_top_s","0px")
+            document.documentElement.style.setProperty("--text_margin_top_s","64px")
             document.documentElement.style.setProperty("--desc_margin","85px")
             
             document.documentElement.style.setProperty("--theme_selector1_bg","#547282")
@@ -1122,7 +1134,7 @@
         document.documentElement.style.setProperty("--text_100px",100*size_scale_thi+"px")
         document.documentElement.style.setProperty("--text_485px",485*size_scale_for+"px")
 
-        text_size = (132*size_scale)+"px";
+        text_size = (137*size_scale)+"px";
         console.log(text_size)
 
         document.documentElement.style.setProperty("--text_size",text_size)
