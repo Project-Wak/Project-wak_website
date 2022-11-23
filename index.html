@@ -639,7 +639,7 @@
                         Watch Trailer
                         </a>
                         
-                        <a id = "showcase1_code_button" class = "showcase1_code_button" href = "https://github.com/ABER1047/Project-wak" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">
+                        <a id = "showcase1_code_button" class = "showcase1_code_button" href = "https://github.com/ABER1047/Project-wak#--%EC%B4%9D-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EC%88%98" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">
                         Download
                         </a>
                     </li>
@@ -1172,7 +1172,7 @@
         height : 1080px;
         top : 0px;
         margin-left : -8px;
-        background : #02050C;
+        background : white;
         transition : width 1.5s, opacity 1s;
         }
         
@@ -1193,7 +1193,7 @@
         width : 0px;
         height : 2px;
         margin-left : -8px;
-        background : #02050C;
+        background : white;
         transition : width 1.5s;
         }
         </style>
@@ -1204,7 +1204,7 @@
         function loading_now()
         {
         loading_bar.style.width = window.innerWidth+"px";
-        setTimeout(show_page,1500)
+        setTimeout(show_page_anime,1500)
         }
         
         var video_ele = document.getElementById("trailer_video")
@@ -1212,7 +1212,7 @@
         {
         console.log("loaded_video");
         document.getElementById("loading_bar").style.transition = "width 1s";
-        setTimeout(show_page,1000);
+        setTimeout(show_page_anime,1000);
         }
         
         window.onload = function()
@@ -1401,6 +1401,20 @@
         document.getElementById("showcase1_trailer_button").style.opacity = 1;
         
         document.getElementById("showcase1_code_button").style.opacity = 1;
+        }
+        
+        
+        
+        
+        
+        function show_page_anime()
+        {
+        document.getElementById("loading_bar_bg").style.background = "#02050C";
+        document.getElementById("loading_bar").style.background = "#02050C";
+        document.getElementById("loading_bar_bg").style.transition = "background 1s, width 1s, opacity 1s";
+        document.getElementById("loading_bar").style.transition = "background 1s, width 1s";
+        window.scroll(0,0)
+        setTimeout(show_page,1000)
         }
 
         </script>
