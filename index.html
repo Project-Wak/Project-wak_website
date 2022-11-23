@@ -97,12 +97,6 @@
             
 
             <style>
-                .trailer_video
-                {
-                overflow: hidden;
-                }
-                
-            
                 .trailer_bg
                 {
                 margin-left : var(--trailer_bg_margin_left);
@@ -759,7 +753,7 @@
                 margin-top : var(--theme_selector_margin);
                 }
                 </style>
-                
+
                 <div id = "theme_selector_button1" class = "theme_selector_button1" style = "transition : opacity 0.8s; opacity : 0">
                 Main
                 </div>
@@ -1043,6 +1037,8 @@
         var size_scale_for = c_w/522;
         var mid_pos_real = (1920-c_w)*0.5;
         var text_size;
+        
+        document.documentElement.style.setProperty("--window_height",window.innerHeight)
             if (c_w < 975)
             {
             var margin_scale = 1920/c_w;
@@ -1165,6 +1161,14 @@
     <!-- Loading bar -->
     <body>
         <style>
+        
+        .trailer_video
+        {
+        overflow: hidden;
+        height : var(--window_height);
+        }
+        
+        
         .loading_bar_bg
         {
         position : fixed;
