@@ -13,8 +13,8 @@ margin-top: -32px;
 width : 1920;
 opacity : 1;
 position : absolute;
-transition : filter 0.1s;
-transition : opacity 0.1s;
+transition : filter 0.1s, filter 0.2s;
+transition : opacity 0.1s, filter 0.2s;
 }
 
 

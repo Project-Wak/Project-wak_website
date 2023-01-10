@@ -42,7 +42,7 @@
             </div>
             
             <div class = "first_theme">
-                <div class = "trailer_bg" style = "opacity : 1; filter : blur(0px);">
+                <div class = "trailer_bg" id = "trailer_bg" style = "opacity : 1; filter : blur(50px); transition : filter 1s">
                     <video id = "trailer_video" class = "trailer_video" autoplay muted loop playsinline control preload = "auto" width = "1920" height = "1080">
                     <source src = "imgs/Project wak website trailer.mp4" type = "video/mp4" loading = "eager">
                     </video>
@@ -1241,7 +1241,7 @@
         document.getElementById("loading_bar_bg").style.opacity = 0;
         document.getElementById("loading_bar").style.opacity = 0;
         document.getElementById("loading_bar_grad").style.opacity = 0;
-            
+        document.getElementById("trailer_bg").style.filter = "blur(0px)";
         console.log("page_loaded");
         }
         
@@ -1251,6 +1251,7 @@
         document.getElementById("loading_bar_bg").style.height = 0;
         document.getElementById("loading_bar").style.height = 0;
         document.getElementById("loading_bar_grad").style.height = 0;
+        document.getElementById("trailer_bg").style.transition = "filter 0.2s";
         setTimeout(title1_anime,1600)
         setTimeout(title2_anime,1800)
         setTimeout(title_desc_anime,2000)
