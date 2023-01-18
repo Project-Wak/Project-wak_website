@@ -752,6 +752,32 @@
                 color : white;
                 margin-top : var(--theme_selector_margin);
                 }
+                
+                
+                
+                
+                .theme_selector_button5
+                {
+                background-color : #ffffff00; 
+                border : 2px solid #ffffff00;
+                margin-left : var(--theme_selector5_pos);
+                text-align : center;
+                cursor : pointer;
+                position : fixed;
+                transition : color 0.2s;
+                width : 120px;
+                height : 36px;
+                top : 32px;
+                color : white;
+                font-weight : bold;
+                font-size : var(--text_16px);
+                line-height : 34px;
+                border-radius : 12px;
+                text-decoration : none;
+                transition : color 0.2s;
+                color : white;
+                margin-top : var(--theme_selector_margin);
+                }
                 </style>
 
                 <div id = "theme_selector_button1" class = "theme_selector_button1" style = "transition : opacity 0.8s; opacity : 0">
@@ -771,6 +797,13 @@
                     Source code
                     </div>
                 </a>
+                
+                <a class = "wiki_link" href = "https://github.com/ABER1047/Project-wak-wiki">
+                    <div id = "theme_selector_button5" class = "theme_selector_button5" style = "transition : opacity 0.8s; opacity : 0">
+                    Wiki
+                    </div>
+                </a>
+                
                 
                 <script>
                     if (window.innerWidth < 975)
@@ -852,6 +885,19 @@
                 document.querySelector(".theme_selector_button4").addEventListener("mouseleave",function()
                 {
                 document.querySelector(".theme_selector_button4").style.color = "white"
+                })
+                
+                
+                
+                
+                document.querySelector(".theme_selector_button5").addEventListener("mouseover",function()
+                {
+                document.querySelector(".theme_selector_button5").style.color = "#E7D2B5"
+                })
+                
+                document.querySelector(".theme_selector_button5").addEventListener("mouseleave",function()
+                {
+                document.querySelector(".theme_selector_button5").style.color = "white"
                 })
                 </script>
             </div>
@@ -976,6 +1022,7 @@
         --theme_selector2_pos : 71%;
         --theme_selector3_pos : 66%;
         --theme_selector4_pos : 58.5%;
+        --theme_selector5_pos : 56%;
         --mid_pos : 0px;
         --contact_button1_pos : 75%;
         --contact_button2_pos : 71.8%;
@@ -1050,6 +1097,7 @@
             
             document.documentElement.style.setProperty("--theme_selector1_bg","#ffffff00")
             document.documentElement.style.setProperty("--theme_selector4_pos",c_w*size_scale-73+"px")
+            document.documentElement.style.setProperty("--theme_selector5_pos",-512+"px")
             document.documentElement.style.setProperty("--theme_selector3_pos",c_w*size_scale+25+"px")
             document.documentElement.style.setProperty("--theme_selector2_pos",c_w*size_scale+87+"px")
             document.documentElement.style.setProperty("--theme_selector1_pos",c_w*size_scale+147+"px")
@@ -1091,6 +1139,7 @@
             document.documentElement.style.setProperty("--theme_selector2_pos","71%")
             document.documentElement.style.setProperty("--theme_selector3_pos","66%")
             document.documentElement.style.setProperty("--theme_selector4_pos","58.5%")
+            document.documentElement.style.setProperty("--theme_selector5_pos","52%")
             document.documentElement.style.setProperty("--theme_selector_margin","0px")
             
             
@@ -1283,6 +1332,7 @@
         document.getElementById("theme_selector_button2").style.opacity = 1;
         document.getElementById("theme_selector_button3").style.opacity = 1;
         document.getElementById("theme_selector_button4").style.opacity = 1;
+        document.getElementById("theme_selector_button5").style.opacity = 1;
         document.getElementById("body_t").style.overflowY = "scroll";
         }
         
